@@ -1,0 +1,23 @@
+
+			{% if photos %}
+			{% for photo in photos %}
+			<div class="col-sm-4 col-md-4 col-xs-6">
+				<div class="gallery_img">
+					<a href="{{ photo.popup }}" data-lightbox="example-set" data-title="{{ photo.title }}">
+					  <img class="img-responsive" src="{{ photo.image }}" alt="{{ photo.title }}"/>
+					</a>
+					{% if photo.title %}
+						<div class="caption">
+							<p class="text-center">{{ photo.title }}</p>
+						</div>
+					{%endif%}
+				</div>
+			</div>
+			{%endfor%}
+			{%else%}
+			<div class="col-sm-12">
+			<p class="text-center">{{ text_no_results }}</p></div>
+			<script>
+			$('#load-new').hide();
+			</script>
+			{%endif%}

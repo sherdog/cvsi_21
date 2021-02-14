@@ -1,0 +1,72 @@
+<style>
+	.album-thumb{
+		min-height:150px;
+		border:1px solid #ccc;
+		margin-bottom:15px;
+		position:relative;
+			overflow:hidden;
+	}
+	.album-thumb .caption{
+	background-color: {{ caption_bg_color }};
+	top: -50%;
+	opacity: 0.8;
+	padding: 7px 15px;
+	position: absolute;
+	width: 100%;
+	color: {{ caption_text_clr }};
+	font-weight:bold;
+	z-index:99;
+	transition: all 0.5s ease;
+	}
+	.album-thumb .gallery_views{
+	position:absolute;
+	bottom:-50px;
+	padding:10px 0;
+	width:100%;
+	background-color:#303030;
+	z-index:9;
+	opacity:0.8;
+	text-align:center;
+	color:#fff;
+	transition: all 0.5s ease;
+}
+.album-thumb .gallery_views p{
+	margin:0px;
+}
+.album-thumb:hover .gallery_views{
+	bottom:0px;
+	transition: all 0.5s ease;
+}
+	.album-thumb h4{
+		font-weight:bold;
+		color:{{ caption_text_clr }};
+	}
+	.album-thumb h4 a{
+		color:{{ caption_text_clr }};
+	}
+	.album-thumb:hover .caption{
+		top: 0px;
+		transition: all 0.5s ease;
+	}
+	#column-left .album-layout, #column-right .album-layout{
+		width:100%;
+	}
+</style>
+<h3>{{ heading_title }}</h3>
+<div class="row">
+	{%for album in albums %}
+  <div class="album-layout col-lg-3 col-md-3 col-sm-6 col-xs-12">
+    <div class="album-thumb transition">
+      <div class="image"><a href="{{ album.href }}"><img src="{{ album.image }}" alt="{{ album.title }}" title="{{ album.title }}" class="img-responsive center-block" style="width:100%"/></a></div>
+      <div class="caption">
+        <h4 class="text-center"><a href="{{ album.href }}">{{ album.title }}</a></h4>
+      </div>   
+	  {%if total_views %}
+			<div class="gallery_views">
+			<p><i class="fa fa-eye"></i> {{ album.viewed }}</p>
+			</div>
+	{%endif%}	  
+    </div>
+  </div>
+ {%endfor%}	  
+</div>

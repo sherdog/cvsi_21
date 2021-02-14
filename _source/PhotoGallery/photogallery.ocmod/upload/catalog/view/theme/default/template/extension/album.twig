@@ -1,0 +1,94 @@
+{{ header }}
+<style>
+.gallery_img{
+	border:1px solid #ccc;
+	margin-bottom:30px;
+	position:relative;
+	overflow:hidden;
+}
+.gallery_img .caption{
+	background-color: {{ caption_bg_color }};
+	top: -50%;
+	opacity: 0.8;
+	padding: 7px 15px;
+	position: absolute;
+	width: 100%;
+	color: {{ caption_text_clr }};
+	font-weight:bold;
+	z-index:99;
+	transition: all 0.5s ease;
+}
+.gallery_img:hover .caption{
+	top: 0px;
+	transition: all 0.5s ease;
+}
+.gallery_img p{
+	font-size:14px;
+	margin:10px 0;
+}
+.gallery_img .gallery_views{
+	position:absolute;
+	bottom:-50px;
+	padding:10px 0;
+	width:100%;
+	background-color:#303030;
+	z-index:9;
+	opacity:0.8;
+	text-align:center;
+	color:#fff;
+	transition: all 0.5s ease;
+}
+.gallery_img .gallery_views p{
+	margin:0px;
+}
+.gallery_img:hover .gallery_views{
+	bottom:0px;
+	transition: all 0.5s ease;
+}
+</style>
+<div class="container">
+  <ul class="breadcrumb">
+  {%for breadcrumb in breadcrumbs %}
+    <li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>
+	{%endfor%}
+  </ul>
+ <div class="row">{{ column_left }}
+    {% if column_left and column_right %}
+    {% set class = 'col-sm-6' %}
+    {% elseif column_left or column_right %}
+    {% set class = 'col-sm-9' %}
+    {% else %}
+    {% set class = 'col-sm-12' %}
+    {% endif %}
+    <div id="content" class="{{ class }}">{{ content_top }}
+		<h1>{{ heading_title }}</h1>
+		<hr />
+		<div class="row">
+		{%if albums %}
+			{%for album in albums %}
+					<div class="col-sm-4 col-md-4 col-xs-6">
+						<div class="gallery_img">
+							  <a href="{{ album.href }}"><img src="{{ album.image }}" alt="{{ album.title }}" title="{{ album.title }}" class="img-responsive  center-block" /></a>
+							</a>
+							{%if albums.title %}
+								<div class="caption">
+									<p class="text-center">{{ album.title }}</p>
+								</div>
+							{% endif %}
+							{%if total_views %}
+							<div class="gallery_views">
+								<p><i class="fa fa-eye"></i> {{ album.viewed }}</p>
+							</div>
+							{% endif %}
+						</div>
+					</div>
+				{% endfor %}
+				{%else%}
+			<p class="text-center">{{ text_no_results }}</p>
+			{% endif %}
+		</div>
+		{{ content_bottom }}
+	</div>
+    {{ column_right }}</div>
+</div>
+{{ footer }}

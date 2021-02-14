@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modification>
+	<name>Gallery</name>
+	<version>2x</version>
+	<code>Gallery</code>
+	<author>Webxit solutions</author>
+	<file path="admin/language/*/common/column_left.php">
+		<operation>
+			<search><![CDATA[// Text]]></search>
+			<add position="after"><![CDATA[
+			
+$_['text_gallery']                		 = 'Gallery';
+$_['text_album']                   		 = 'Albums & Photos';
+$_['text_albumsetting']                = 'Setting';
+
+			]]></add>
+		</operation>
+	</file>
+	<file path="admin/controller/common/column_left.php">
+		<operation>
+			<search><![CDATA[// Design]]></search>
+			<add position="before"><![CDATA[
+			
+			$gallery = array();
+			
+			if ($this->user->hasPermission('access', 'extension/album')) {
+				$gallery[] = array(
+					'name'	   => $this->language->get('text_album'),
+					'href'     => $this->url->link('extension/album', 'user_token=' . $this->session->data['user_token'], true),
+					'children' => array()		
+				);	
+				
+				$gallery[] = array(
+					'name'	   => $this->language->get('text_albumsetting'),
+					'href'     => $this->url->link('extension/gallerysetting', 'user_token=' . $this->session->data['user_token'], true),
+					'children' => array()		
+				);	
+			}
+			
+			if ($gallery) {
+				$data['menus'][] = array(
+					'id'       => 'menu-gallery',
+					'icon'	   => 'fa-file-picture-o', 
+					'name'	   => $this->language->get('text_gallery'),
+					'href'     => '',
+					'children' => $gallery
+				);	
+			}
+			
+			]]></add>
+		</operation>
+	</file>
+	<file path="catalog/controller/common/menu.php">
+		<operation>
+			<search><![CDATA['name'     => $category['name'],]]></search>
+			<add position="before"><![CDATA[
+					/*XML*/
+					'sort_order'     => $category['sort_order'],
+					/*XML*/
+			
+			]]></add>
+		</operation>
+		<operation>
+			<search><![CDATA[return $this->load->view('common/menu', $data);]]></search>
+			<add position="before"><![CDATA[
+			if($this->config->get('gallerysetting_headermenu'))
+		{
+			
+			$data['categories'][] = array(
+			'sort_order'     => ($this->config->get('gallerysetting_menu_sort_order') ? $this->config->get('gallerysetting_menu_sort_order') : 0),
+			'name'     => ($this->config->get('gallerysetting_menu'.$this->config->get('config_language_id')) ? $this->config->get('gallerysetting_menu'.$this->config->get('config_language_id')) : 'Gallery'),
+			'children' => array(),
+			'column'   => 1,
+			'href'     => $this->url->link('extension/album', '','SSL')
+			);
+		
+			function menusortx( $a, $b ){
+				return $a['sort_order'] < $b['sort_order'] ? -1 : 1;
+			}
+
+			usort($data['categories'], "menusortx" );
+		}
+			
+			]]></add>
+		</operation>
+	</file>
+	<file path="catalog/language/*/common/header.php">
+		<operation>
+			<search><![CDATA[// Text]]></search>
+			<add position="after"><![CDATA[
+			
+$_['text_gallery']       = 'Gallery';
+
+			]]></add>
+		</operation>
+	</file>
+	<file path="catalog/controller/startup/seo_url.php">
+		<operation>
+			<search><![CDATA[$url = explode('=', $query->row['query']);]]></search>
+			<add position="after"><![CDATA[
+				if ($url[0] == 'album_id') {
+						$this->request->get['album_id'] = $url[1];
+						
+					}
+				]]></add>
+		</operation>
+		<operation>
+			<search><![CDATA[if ($query->row['query'] && $url[0] != 'information_id' && $url[0] != 'manufacturer_id' && $url[0] != 'category_id' && $url[0] != 'product_id') {]]></search>
+			<add position="replace"><![CDATA[
+				if ($query->row['query'] && $url[0] != 'information_id' && $url[0] != 'manufacturer_id' && $url[0] != 'category_id' && $url[0] != 'product_id' && $url[0] != 'album_id') {
+				]]></add>
+		</operation>
+		<operation>
+			<search><![CDATA[} elseif (isset($this->request->get['information_id'])) {]]></search>
+			<add position="before"><![CDATA[
+				}elseif (isset($this->request->get['album_id'])){
+					$this->request->get['route'] = 'extension/photo';
+				]]></add>
+		</operation>
+		<operation>
+			<search><![CDATA[if (($data['route'] == 'product/product' && $key == 'product_id') || (($data['route'] == 'product/manufacturer/info' || $data['route'] == 'product/product') && $key == 'manufacturer_id') || ($data['route'] == 'information/information' && $key == 'information_id')) {]]></search>
+			<add position="replace"><![CDATA[
+				if (($data['route'] == 'product/product' && $key == 'product_id') || (($data['route'] == 'product/manufacturer/info' || $data['route'] == 'product/product') && $key == 'manufacturer_id') || ($data['route'] == 'information/information' && $key == 'information_id') || ($data['route'] == 'extension/photo' && $key == 'album_id')) {
+				]]></add>
+		</operation>
+		<operation>
+			<search><![CDATA[} elseif ($key == 'path') {]]></search>
+			<add position="before"><![CDATA[
+				}elseif($data['route']=='extension/album'){
+					$query = $this->db->query("SELECT * FROM " . DB_PREFIX . "seo_url WHERE `query` = '".$this->db->escape($data['route'])."' AND store_id = '" . (int)$this->config->get('config_store_id') . "' AND language_id = '" . (int)$this->config->get('config_language_id') . "'");
+					if ($query->num_rows && $query->row['keyword']) {
+						$url .= '/' . $query->row['keyword'];
+					}else {
+						$url = '';
+						break;
+					}
+					
+					unset($data[$key]);
+				]]></add>
+		</operation>
+	</file>
+</modification>

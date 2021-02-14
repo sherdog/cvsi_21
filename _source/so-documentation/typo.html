@@ -1,0 +1,922 @@
+<!doctype html>  
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us"><!--<![endif]-->
+<head>
+     <meta charset="utf-8">
+     
+     <title>So eMarket for OpenCart 3</title>
+     
+     <meta name="description" content="So BestShop is multipurpose responsive OpenCart theme that designed for any online store like fashion store, auto parts, furniture store, electronics store, mobile store...">
+     <meta name="author" content="Opencartworks">
+     <meta name="copyright" content="Opencartworks">
+     <meta name="generator" content="Documenter v2.0 http://rxa.li/documenter">
+     <meta name="date" content="2017-02-08T07:50:52+01:00">
+	 <link rel="stylesheet" href="assets/css/theme.css" media="all">
+     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+     <link rel="stylesheet" href="assets/css/style.css" media="all">
+
+     <link rel="stylesheet" href="assets/js/google-code-prettify/prettify.css" media="screen">
+     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700" rel="stylesheet" type="text/css">
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.0/js/bootstrap.min.js"></script>
+     <script src="assets/js/script.js"></script>
+	
+</head>
+
+<body data-spy="scroll" data-target=".scrollspy">
+     
+    <div id="documenter_sidebar" class="scrollspy" >
+        <div class="side-nav-search">
+                <a href="index.html">Typo  - User Guide</a>
+                <div role="search">
+                  <form id="rtd-search-form" class="wy-form" action="./search.html" method="get">
+                     <input type="text" name="q" placeholder="Search docs" id="searchInput" onkeyup="searchFunction()">
+                  </form>
+                </div>
+        </div>
+        <div class="wy-menu wy-menu-vertical">
+             <p class="caption"><span class="caption-text">Typography</span></p>
+                <ul class="nav">
+                     <li class="active"><a  href="#headings">Headings</a></li>
+                     <li ><a  href="#inline-text-elements">Inline text elements</a></li>
+                     <li ><a  href="#text-utilities">Text utilities</a>
+                        <ul class="nav">
+                          <li><a href="#text-alignment">Text alignment</a></li>
+                          <li><a href="#text-transform">Text transform</a></li>
+                          <li><a href="#color">Color</a></li>
+                          <li><a href="#background-color">Background color</a></li>
+                        </ul>     
+                     </li>
+                    
+                </ul>
+             <p class="caption"><span class="caption-text">Content</span></p>     
+            <ul class="nav" >
+				 <li ><a  href="#lists">Lists</a></li>
+				 <li><a href="#tables" title="tables">Tables</a>
+					<ul class="nav">
+					  <li><a href="#table-head-options">Table head options</a></li>
+					  <li><a href="#striped-rows">Striped rows</a></li>
+					  <li><a href="#bordered-table">Bordered table</a></li>
+					  <li><a href="#hoverable-rows">Hoverable rows</a></li>
+					  <li><a href="#contextual-classes">Contextual classes</a></li>
+					</ul>
+				 </li>
+				 <li><a href="#code" title="Code">Code</a></li>
+				 <li><a href="#admonitions" title="Admonitions">Admonitions</a></li>
+				 <li><a href="#buttons" title="buttons">Button</a></li>
+				 
+			</ul>
+               
+        </div>
+        
+        <div id="documenter_copyright">
+             Copyright SmartAddons 2017<br>
+             made with the <a href="http://rxa.li/documenter">Documenter v2.0</a> 
+        </div>
+     </div>
+     
+     <div id="documenter_content" class="rst-content clearfix">
+        <section id="headings">
+             <h1>Typography</h1>
+             <p class="bd-lead">Documentation and examples for Bootstrap typography, including global settings, headings, body text, lists, and more.</p>
+             <h1>Headings</h1>
+             <div class="sub_content">
+                <p>All HTML headings, <code class="highlighter-rouge">&lt;h1&gt;</code> through <code class="highlighter-rouge">&lt;h6&gt;</code>, are available.</p>
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Heading</th>
+                      <th>Example</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <p><code class="highlighter-rouge">&lt;h1&gt;&lt;/h1&gt;</code></p>
+
+                      </td>
+                      <td><h1 >h1. Bootstrap heading</h1></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p><code class="highlighter-rouge">&lt;h2&gt;&lt;/h2&gt;</code></p>
+
+                      </td>
+                      <td><h2 >h2. Bootstrap heading</h2></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p><code class="highlighter-rouge">&lt;h3&gt;&lt;/h3&gt;</code></p>
+
+                      </td>
+                      <td><h3>h3. Bootstrap heading</h3></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p><code class="highlighter-rouge">&lt;h4&gt;&lt;/h4&gt;</code></p>
+
+                      </td>
+                      <td><h4>h4. Bootstrap heading</h4></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p><code class="highlighter-rouge">&lt;h5&gt;&lt;/h5&gt;</code></p>
+
+                      </td>
+                      <td><h5>h5. Bootstrap heading</h5></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p><code class="highlighter-rouge">&lt;h6&gt;&lt;/h6&gt;</code></p>
+
+                      </td>
+                      <td><h6>h6. Bootstrap heading</h6></td>
+                    </tr>
+                  </tbody>
+                </table>     
+                <p><code class="highlighter-rouge">.h1</code> through <code class="highlighter-rouge">.h6</code> classes are also available, for when you want to match the font styling of a heading but cannot use the associated HTML element.</p>
+             </div>
+        </section>
+        
+        <section id="inline-text-elements">
+             <h1>Inline text elements</h1>
+             <div class="sub_content">
+                <p>Styling for common inline HTML5 elements.</p>
+                <div class="bd-example">
+                <p>You can use the mark tag to <mark>highlight</mark> text.</p>
+                <p><del>This line of text is meant to be treated as deleted text.</del></p>
+                <p><s>This line of text is meant to be treated as no longer accurate.</s></p>
+                <p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
+                <p><u>This line of text will render as underlined</u></p>
+                <p><small>This line of text is meant to be treated as fine print.</small></p>
+                <p><strong>This line rendered as bold text.</strong></p>
+                <p><em>This line rendered as italicized text.</em></p>
+                </div>     
+
+             </div>
+        </section>
+        
+        <section id="text-utilities">
+             <h1>Text utilities</h1>
+             
+             <div class="sub_content">
+                <p>Change text alignment, transform, style, weight, and color with our <a href="/docs/4.0/utilities/text/">text utilities</a> and <a href="/docs/4.0/utilities/colors/">color utilities</a>.</p>
+
+                <h2 id="text-alignment">Text alignment</h2>
+                <p>Easily realign text to components with text alignment classes.</p>
+                <p>For left, right, and center alignment, responsive classes are available that use the same viewport width breakpoints as the grid system.</p>
+                <div class="bd-example">
+                <p class="text-left">Left aligned text on all viewport sizes.</p>
+                <p class="text-center">Center aligned text on all viewport sizes.</p>
+                <p class="text-right">Right aligned text on all viewport sizes.</p>
+
+                <p class="text-sm-left">Left aligned text on viewports sized SM (small) or wider.</p>
+                <p class="text-md-left">Left aligned text on viewports sized MD (medium) or wider.</p>
+                <p class="text-lg-left">Left aligned text on viewports sized LG (large) or wider.</p>
+                <p class="text-xl-left">Left aligned text on viewports sized XL (extra-large) or wider.</p>
+                </div>
+
+                <h2 id="text-transform">Text transform</h2>
+                <p>Transform text in components with text capitalization classes.</p>
+                <div class="bd-example">
+                     <p class="text-lowercase">Lowercased text.</p>
+                     <p class="text-uppercase">Uppercased text.</p>
+                     <p class="text-capitalize">CapiTaliZed text.</p>
+                </div>
+
+                <h2 id="font-weight-and-italics">Font weight and italics</h2>
+                <p>Quickly change the weight (boldness) of text or italicize text.</p>
+                <div class="bd-example">
+                     <p class="font-weight-bold">Bold text.</p>
+                     <p class="font-weight-normal">Normal weight text.</p>
+                     <p class="font-weight-light">Light weight text.</p>
+                     <p class="font-italic">Italic text.</p>
+                </div>
+
+                <h2 id="color">Color</h2>
+                <div class="bd-example">
+                     <p class="text-primary">.text-primary</p>
+                     <p class="text-secondary">.text-secondary</p>
+                     <p class="text-success">.text-success</p>
+                     <p class="text-danger">.text-danger</p>
+                     <p class="text-warning">.text-warning</p>
+                     <p class="text-info">.text-info</p>
+                     <p class="text-light bg-dark">.text-light</p>
+                     <p class="text-dark">.text-dark</p>
+                     <p class="text-muted">.text-muted</p>
+                     <p class="text-white bg-dark">.text-white</p>
+                </div>
+                <p>Contextual text classes also work well on anchors with the provided hover and focus states. <strong>Note that the <code class="highlighter-rouge">.text-white</code> and <code class="highlighter-rouge">.text-muted</code> class has no link styling.</strong></p>
+                <div class="bd-example">
+                     <p><a href="#" class="text-primary">Primary link</a></p>
+                     <p><a href="#" class="text-secondary">Secondary link</a></p>
+                     <p><a href="#" class="text-success">Success link</a></p>
+                     <p><a href="#" class="text-danger">Danger link</a></p>
+                     <p><a href="#" class="text-warning">Warning link</a></p>
+                     <p><a href="#" class="text-info">Info link</a></p>
+                     <p><a href="#" class="text-light bg-dark">Light link</a></p>
+                     <p><a href="#" class="text-dark">Dark link</a></p>
+                     <p><a href="#" class="text-muted">Muted link</a></p>
+                     <p><a href="#" class="text-white bg-dark">White link</a></p>
+                </div>
+
+                <h2 id="background-color">Background color</h2>
+                <p>Similar to the contextual text color classes, easily set the background of an element to any contextual class. Anchor components will darken on hover, just like the text classes. Background utilities <strong>do not set <code class="highlighter-rouge">color</code></strong>, so in some cases you’ll want to use <code class="highlighter-rouge">.text-*</code> utilities.</p>
+                <div class="bd-example">
+                     <div class="p-3 mb-2 bg-primary text-white">.bg-primary</div>
+                     <div class="p-3 mb-2 bg-secondary text-white">.bg-secondary</div>
+                     <div class="p-3 mb-2 bg-success text-white">.bg-success</div>
+                     <div class="p-3 mb-2 bg-danger text-white">.bg-danger</div>
+                     <div class="p-3 mb-2 bg-warning text-dark">.bg-warning</div>
+                     <div class="p-3 mb-2 bg-info text-white">.bg-info</div>
+                     <div class="p-3 mb-2 bg-light text-dark">.bg-light</div>
+                     <div class="p-3 mb-2 bg-dark text-white">.bg-dark</div>
+                     <div class="p-3 mb-2 bg-white text-dark">.bg-white</div>
+                </div>
+             </div>
+        </section>
+ 
+  
+        <section id="lists" >
+             <h1>Lists</h1>
+             <p>All lists—<code class="highlighter-rouge">&lt;ul&gt;</code>, <code class="highlighter-rouge">&lt;ol&gt;</code>, and <code class="highlighter-rouge">&lt;dl&gt;</code>—have their <code class="highlighter-rouge">margin-top</code> removed and a <code class="highlighter-rouge">margin-bottom: 1rem</code>. Nested lists have no <code class="highlighter-rouge">margin-bottom</code>.</p>
+			
+             <div class="bd-example">
+
+             <ul class="simple">
+               <li>Lorem ipsum dolor sit amet</li>
+               <li>Consectetur adipiscing elit</li>
+               <li>Integer molestie lorem at massa</li>
+               <li>Facilisis in pretium nisl aliquet</li>
+               <li>Nulla volutpat aliquam velit
+                 <ul>
+                   <li>Phasellus iaculis neque</li>
+                   <li>Purus sodales ultricies</li>
+                   <li>Vestibulum laoreet porttitor sem</li>
+                   <li>Ac tristique libero volutpat at</li>
+                 </ul>
+               </li>
+               <li>Faucibus porta lacus fringilla vel</li>
+               <li>Aenean sit amet erat nunc</li>
+               <li>Eget porttitor lorem</li>
+             </ul>
+
+             <ol>
+               <li>Lorem ipsum dolor sit amet</li>
+               <li>Consectetur adipiscing elit</li>
+               <li>Integer molestie lorem at massa</li>
+               <li>Facilisis in pretium nisl aliquet</li>
+               <li>Nulla volutpat aliquam velit</li>
+               <li>Faucibus porta lacus fringilla vel</li>
+               <li>Aenean sit amet erat nunc</li>
+               <li>Eget porttitor lorem</li>
+             </ol>
+
+             </div>
+
+             <p>For simpler styling, clear hierarchy, and better spacing, description lists have updated <code class="highlighter-rouge">margin</code>s. <code class="highlighter-rouge">&lt;dd&gt;</code>s reset <code class="highlighter-rouge">margin-left</code> to <code class="highlighter-rouge">0</code> and add <code class="highlighter-rouge">margin-bottom: .5rem</code>. <code class="highlighter-rouge">&lt;dt&gt;</code>s are <strong>bolded</strong>.</p>
+
+             <div class="bd-example">
+             <dl>
+               <dt>Description lists</dt>
+               <dd>A description list is perfect for defining terms.</dd>
+               <dt>Euismod</dt>
+               <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem.</dd>
+               <dd>Donec id elit non mi porta gravida at eget metus.</dd>
+               <dt>Malesuada porta</dt>
+               <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+             </dl>
+
+             </div>
+
+             <h2>Unstyled</h2>
+
+             <p>Remove the default <code class="highlighter-rouge">list-style</code> and left margin on list items (immediate children only). <strong>This only applies to immediate children list items</strong>, meaning you will need to add the class for any nested lists as well.</p>
+             <div class="bd-example">
+                <ul class="list-unstyled">
+                  <li>Lorem ipsum dolor sit amet</li>
+                  <li>Consectetur adipiscing elit</li>
+                  <li>Integer molestie lorem at massa</li>
+                  <li>Facilisis in pretium nisl aliquet</li>
+                  <li>Nulla volutpat aliquam velit
+                    <ul>
+                      <li>Phasellus iaculis neque</li>
+                      <li>Purus sodales ultricies</li>
+                      <li>Vestibulum laoreet porttitor sem</li>
+                      <li>Ac tristique libero volutpat at</li>
+                    </ul>
+                  </li>
+                  <li>Faucibus porta lacus fringilla vel</li>
+                  <li>Aenean sit amet erat nunc</li>
+                  <li>Eget porttitor lorem</li>
+                </ul>
+             </div>
+
+             <h2 id="inline">Inline</h2>
+             <p>Remove a list’s bullets and apply some light <code class="highlighter-rouge">margin</code> with a combination of two classes, <code class="highlighter-rouge">.list-inline</code> and <code class="highlighter-rouge">.list-inline-item</code>.</p>
+             <div class="bd-example">
+                <ul class="list-inline">
+                  <li class="list-inline-item">Lorem ipsum</li>
+                  <li class="list-inline-item">Phasellus iaculis</li>
+                  <li class="list-inline-item">Nulla volutpat</li>
+                </ul>
+             </div>
+
+             <h2 id="description-list-alignment">Description list alignment</h2>
+             <p>Align terms and descriptions horizontally by using our grid system’s predefined classes (or semantic mixins). For longer terms, you can optionally add a <code class="highlighter-rouge">.text-truncate</code> class to truncate the text with an ellipsis.</p>
+             <div class="bd-example">
+                <dl class="row">
+                  <dt class="col-sm-3">Description lists</dt>
+                  <dd class="col-sm-9">A description list is perfect for defining terms.</dd>
+
+                  <dt class="col-sm-3">Euismod</dt>
+                  <dd class="col-sm-9">
+                    <p>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</p>
+                    <p>Donec id elit non mi porta gravida at eget metus.</p>
+                  </dd>
+
+                  <dt class="col-sm-3">Malesuada porta</dt>
+                  <dd class="col-sm-9">Etiam porta sem malesuada magna mollis euismod.</dd>
+
+                  <dt class="col-sm-3 text-truncate">Truncated term is truncated</dt>
+                  <dd class="col-sm-9">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</dd>
+
+                  <dt class="col-sm-3">Nesting</dt>
+                  <dd class="col-sm-9">
+                    <dl class="row">
+                      <dt class="col-sm-4">Nested definition list</dt>
+                      <dd class="col-sm-8">Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc.</dd>
+                    </dl>
+                  </dd>
+                </dl>
+             </div>
+        
+			
+	</section>
+      
+ 
+     <section id="tables">
+        <h1>Tables</h1>
+        <p>Due to the widespread use of tables across third-party widgets like calendars and date pickers, we’ve designed our tables to be <strong>opt-in</strong>. Just add the base class <code class="highlighter-rouge">.table</code> to any <code class="highlighter-rouge">&lt;table&gt;</code>, then extend with custom styles or our various included modifier classes.</p>
+        <p>Using the most basic table markup, here’s how <code class="highlighter-rouge">.table</code>-based tables look in Bootstrap. <strong>All table styles are inherited in Bootstrap 4</strong>, meaning any nested tables will be styled in the same manner as the parent.</p>
+        <div class="bd-example">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">First</th>
+              <th scope="col">Last</th>
+              <th scope="col">Handle</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>@fat</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Larry</td>
+              <td>the Bird</td>
+              <td>@twitter</td>
+            </tr>
+          </tbody>
+        </table>
+        </div>
+
+        <p>You can also invert the colors—with light text on dark backgrounds—with <code class="highlighter-rouge">.table-dark</code>.</p>
+
+        <div class="bd-example">
+             <table class="table table-dark">
+               <thead>
+                 <tr>
+                   <th scope="col">#</th>
+                   <th scope="col">First</th>
+                   <th scope="col">Last</th>
+                   <th scope="col">Handle</th>
+                 </tr>
+               </thead>
+               <tbody>
+                 <tr>
+                   <th scope="row">1</th>
+                   <td>Mark</td>
+                   <td>Otto</td>
+                   <td>@mdo</td>
+                 </tr>
+                 <tr>
+                   <th scope="row">2</th>
+                   <td>Jacob</td>
+                   <td>Thornton</td>
+                   <td>@fat</td>
+                 </tr>
+                 <tr>
+                   <th scope="row">3</th>
+                   <td>Larry</td>
+                   <td>the Bird</td>
+                   <td>@twitter</td>
+                 </tr>
+               </tbody>
+             </table>
+        </div>
+
+        <h2 id="table-head-options">Table head options</h2>
+        <p>Similar to tables and dark tables, use the modifier classes <code class="highlighter-rouge">.thead-light</code> or <code class="highlighter-rouge">.thead-dark</code> to make <code class="highlighter-rouge">&lt;thead&gt;</code>s appear light or dark gray.</p>
+        <div class="bd-example">
+             <table class="table">
+               <thead class="thead-dark">
+                 <tr>
+                   <th scope="col">#</th>
+                   <th scope="col">First</th>
+                   <th scope="col">Last</th>
+                   <th scope="col">Handle</th>
+                 </tr>
+               </thead>
+               <tbody>
+                 <tr>
+                   <th scope="row">1</th>
+                   <td>Mark</td>
+                   <td>Otto</td>
+                   <td>@mdo</td>
+                 </tr>
+                 <tr>
+                   <th scope="row">2</th>
+                   <td>Jacob</td>
+                   <td>Thornton</td>
+                   <td>@fat</td>
+                 </tr>
+                 <tr>
+                   <th scope="row">3</th>
+                   <td>Larry</td>
+                   <td>the Bird</td>
+                   <td>@twitter</td>
+                 </tr>
+               </tbody>
+             </table>
+
+             <table class="table">
+               <thead class="thead-light">
+                 <tr>
+                   <th scope="col">#</th>
+                   <th scope="col">First</th>
+                   <th scope="col">Last</th>
+                   <th scope="col">Handle</th>
+                 </tr>
+               </thead>
+               <tbody>
+                 <tr>
+                   <th scope="row">1</th>
+                   <td>Mark</td>
+                   <td>Otto</td>
+                   <td>@mdo</td>
+                 </tr>
+                 <tr>
+                   <th scope="row">2</th>
+                   <td>Jacob</td>
+                   <td>Thornton</td>
+                   <td>@fat</td>
+                 </tr>
+                 <tr>
+                   <th scope="row">3</th>
+                   <td>Larry</td>
+                   <td>the Bird</td>
+                   <td>@twitter</td>
+                 </tr>
+               </tbody>
+             </table>
+        </div>
+
+        <h2 id="striped-rows">Striped rows</h2>
+        <p>Use <code class="highlighter-rouge">.table-striped</code> to add zebra-striping to any table row within the <code class="highlighter-rouge">&lt;tbody&gt;</code>.</p>
+        <div class="bd-example">
+             <table class="table table-striped">
+               <thead>
+                 <tr>
+                   <th scope="col">#</th>
+                   <th scope="col">First</th>
+                   <th scope="col">Last</th>
+                   <th scope="col">Handle</th>
+                 </tr>
+               </thead>
+               <tbody>
+                 <tr>
+                   <th scope="row">1</th>
+                   <td>Mark</td>
+                   <td>Otto</td>
+                   <td>@mdo</td>
+                 </tr>
+                 <tr>
+                   <th scope="row">2</th>
+                   <td>Jacob</td>
+                   <td>Thornton</td>
+                   <td>@fat</td>
+                 </tr>
+                 <tr>
+                   <th scope="row">3</th>
+                   <td>Larry</td>
+                   <td>the Bird</td>
+                   <td>@twitter</td>
+                 </tr>
+               </tbody>
+             </table>
+        </div>
+        <div class="bd-example">
+             <table class="table table-striped table-dark">
+               <thead>
+                 <tr>
+                   <th scope="col">#</th>
+                   <th scope="col">First</th>
+                   <th scope="col">Last</th>
+                   <th scope="col">Handle</th>
+                 </tr>
+               </thead>
+               <tbody>
+                 <tr>
+                   <th scope="row">1</th>
+                   <td>Mark</td>
+                   <td>Otto</td>
+                   <td>@mdo</td>
+                 </tr>
+                 <tr>
+                   <th scope="row">2</th>
+                   <td>Jacob</td>
+                   <td>Thornton</td>
+                   <td>@fat</td>
+                 </tr>
+                 <tr>
+                   <th scope="row">3</th>
+                   <td>Larry</td>
+                   <td>the Bird</td>
+                   <td>@twitter</td>
+                 </tr>
+               </tbody>
+             </table>
+        </div>
+
+        <h2 id="bordered-table">Bordered table</h2>
+        <p>Add <code class="highlighter-rouge">.table-bordered</code> for borders on all sides of the table and cells.</p>
+        <div class="bd-example">
+             <table class="table table-bordered">
+               <thead>
+                 <tr>
+                   <th scope="col">#</th>
+                   <th scope="col">First</th>
+                   <th scope="col">Last</th>
+                   <th scope="col">Handle</th>
+                 </tr>
+               </thead>
+               <tbody>
+                 <tr>
+                   <th scope="row">1</th>
+                   <td>Mark</td>
+                   <td>Otto</td>
+                   <td>@mdo</td>
+                 </tr>
+                 <tr>
+                   <th scope="row">2</th>
+                   <td>Jacob</td>
+                   <td>Thornton</td>
+                   <td>@fat</td>
+                 </tr>
+                 <tr>
+                   <th scope="row">3</th>
+                   <td colspan="2">Larry the Bird</td>
+                   <td>@twitter</td>
+                 </tr>
+               </tbody>
+             </table>
+        </div>
+
+        <div class="bd-example">
+             <table class="table table-bordered table-dark">
+               <thead>
+                 <tr>
+                   <th scope="col">#</th>
+                   <th scope="col">First</th>
+                   <th scope="col">Last</th>
+                   <th scope="col">Handle</th>
+                 </tr>
+               </thead>
+               <tbody>
+                 <tr>
+                   <th scope="row">1</th>
+                   <td>Mark</td>
+                   <td>Otto</td>
+                   <td>@mdo</td>
+                 </tr>
+                 <tr>
+                   <th scope="row">2</th>
+                   <td>Jacob</td>
+                   <td>Thornton</td>
+                   <td>@fat</td>
+                 </tr>
+                 <tr>
+                   <th scope="row">3</th>
+                   <td colspan="2">Larry the Bird</td>
+                   <td>@twitter</td>
+                 </tr>
+               </tbody>
+             </table>
+        </div>
+
+        <h2 id="hoverable-rows">Hoverable rows</h2>
+        <p>Add <code class="highlighter-rouge">.table-hover</code> to enable a hover state on table rows within a <code class="highlighter-rouge">&lt;tbody&gt;</code>.</p>
+
+        <div class="bd-example">
+             <table class="table table-hover">
+               <thead>
+                 <tr>
+                   <th scope="col">#</th>
+                   <th scope="col">First</th>
+                   <th scope="col">Last</th>
+                   <th scope="col">Handle</th>
+                 </tr>
+               </thead>
+               <tbody>
+                 <tr>
+                   <th scope="row">1</th>
+                   <td>Mark</td>
+                   <td>Otto</td>
+                   <td>@mdo</td>
+                 </tr>
+                 <tr>
+                   <th scope="row">2</th>
+                   <td>Jacob</td>
+                   <td>Thornton</td>
+                   <td>@fat</td>
+                 </tr>
+                 <tr>
+                   <th scope="row">3</th>
+                   <td colspan="2">Larry the Bird</td>
+                   <td>@twitter</td>
+                 </tr>
+               </tbody>
+             </table>
+             </div>
+        <div class="bd-example">
+             <table class="table table-hover table-dark">
+               <thead>
+                 <tr>
+                   <th scope="col">#</th>
+                   <th scope="col">First</th>
+                   <th scope="col">Last</th>
+                   <th scope="col">Handle</th>
+                 </tr>
+               </thead>
+               <tbody>
+                 <tr>
+                   <th scope="row">1</th>
+                   <td>Mark</td>
+                   <td>Otto</td>
+                   <td>@mdo</td>
+                 </tr>
+                 <tr>
+                   <th scope="row">2</th>
+                   <td>Jacob</td>
+                   <td>Thornton</td>
+                   <td>@fat</td>
+                 </tr>
+                 <tr>
+                   <th scope="row">3</th>
+                   <td colspan="2">Larry the Bird</td>
+                   <td>@twitter</td>
+                 </tr>
+               </tbody>
+             </table>
+             </div>
+     
+        <h2 id="contextual-classes">Contextual classes</h2>
+        <p>Use contextual classes to color table rows or individual cells.</p>
+        <div class="bd-example">
+               <table class="table">
+                 <thead>
+                   <tr>
+                     <th scope="col">Class</th>
+                     <th scope="col">Heading</th>
+                     <th scope="col">Heading</th>
+                   </tr>
+                 </thead>
+                 <tbody>
+                   <tr class="table-active">
+                     <th scope="row">Active</th>
+                     <td>Cell</td>
+                     <td>Cell</td>
+                   </tr>
+                   <tr>
+                     <th scope="row">Default</th>
+                     <td>Cell</td>
+                     <td>Cell</td>
+                   </tr>
+
+                   
+                   <tr class="table-primary">
+                     <th scope="row">Primary</th>
+                     <td>Cell</td>
+                     <td>Cell</td>
+                   </tr>
+                   <tr class="table-secondary">
+                     <th scope="row">Secondary</th>
+                     <td>Cell</td>
+                     <td>Cell</td>
+                   </tr>
+                   <tr class="table-success">
+                     <th scope="row">Success</th>
+                     <td>Cell</td>
+                     <td>Cell</td>
+                   </tr>
+                   <tr class="table-danger">
+                     <th scope="row">Danger</th>
+                     <td>Cell</td>
+                     <td>Cell</td>
+                   </tr>
+                   <tr class="table-warning">
+                     <th scope="row">Warning</th>
+                     <td>Cell</td>
+                     <td>Cell</td>
+                   </tr>
+                   <tr class="table-info">
+                     <th scope="row">Info</th>
+                     <td>Cell</td>
+                     <td>Cell</td>
+                   </tr>
+                   <tr class="table-light">
+                     <th scope="row">Light</th>
+                     <td>Cell</td>
+                     <td>Cell</td>
+                   </tr>
+                   <tr class="table-dark">
+                     <th scope="row">Dark</th>
+                     <td>Cell</td>
+                     <td>Cell</td>
+                   </tr>
+                 </tbody>
+               </table>
+        </div>
+
+
+     </section>
+
+ 
+ 
+   <section id="code">
+     <h1 class="bd-title" id="content">Code</h1>
+     <p class="bd-lead">Documentation and examples for displaying inline and multiline blocks of code with Bootstrap.</p>
+
+     <div class="sub_content">
+        <h2 id="inline-code">Inline code</h2>
+        <p>Wrap inline snippets of code with <code class="highlighter-rouge">&lt;code&gt;</code>. Be sure to escape HTML angle brackets.</p>
+        <div class="bd-example">
+        For example, <code>&lt;section&gt;</code> should be wrapped as inline.
+        </div>
+
+        <h2 id="code-blocks">Code blocks</h2>
+        <p>The Sphinx Bootstrap Theme uses Bootstrap styling for <code class="docutils literal"><span class="pre">inline</span> <span class="pre">code</span> <span class="pre">text</span></code> and</p>
+     <div class="highlight-default"><div class="highlight"><pre>
+		<span></span><span class="n">multiline</span>
+		<span class="n">code</span> <span class="n">text</span>
+		</pre></div>
+		</div>
+		
+		<p>It also works with existing Sphinx highlighting:</p>
+		<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="cm">/**</span>
+		<span class="cm"> * Greet.</span>
+		<span class="cm"> */</span>
+		<span class="kd">function</span> <span class="nx">hello</span><span class="p">()</span><span class="o">:</span> <span class="p">{</span>
+		  <span class="k">return</span> <span class="s2">"Hello World"</span><span class="p">;</span>
+		<span class="p">}</span>
+		</pre></div>
+		</div>
+		
+     <div class="highlight-rst"><div class="highlight"><pre>
+&lt;p&gt;Sample text here...&lt;/p&gt;
+&lt;p&gt;And another line of sample text here...&lt;/p&gt;</pre></div>
+     </div>
+     </div>
+
+     </section>
+ 
+	<section id="admonitions">
+		 <h1>Admonitions</h1>
+		 <p>The Sphinx Bootstrap Theme uses the Bootstrap <code class="docutils literal"><span class="pre">alert</span></code> classes for Sphinx
+admonitions.</p>
+		<div class="sub_content rst-content">
+			
+			<div class="admonition note">
+			<p class="first admonition-title">Note</p>
+			<p class="last">Requires Git version &gt;=1.9</p>
+			</div>
+			
+			<div class="admonition warning">
+				<p class="first admonition-title">Warning</p>
+				<p class="last">Read the Docs does not itself run under Python 3 (though it does support
+				building documentation for Python 3 projects). Please ensure the subsequent
+				steps are performed using Python 2.7.</p>
+			</div>
+			
+			<div class="admonition important">
+			<p class="first admonition-title">Important</p>
+			<p class="last"><strong>Are you a marketer?</strong>
+			<a class="reference external" href="https://readthedocs.org/sustainability/advertising/">Learn more</a> about how you can connect with the millions of developers who Read the Docs each month.</p>
+			</div>
+
+			<div class="admonition note">
+				<p class="first admonition-title">Note</p>
+				<p>Besides the Python specific dependencies, you will also need <a class="reference external" href="https://redis.io/">Redis</a>.</p>
+				<p>Ubuntu users could install this package as following:</p>
+				<div class="last highlight-default">
+				<div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">redis</span><span class="o">-</span><span class="n">server</span>
+				</pre></div>
+				</div>
+			</div>
+			
+			<h2>Alerts</h2>
+			<p>Use the <code class="highlighter-rouge">.alert-link</code> utility class to quickly provide matching colored links within any alert.</p>
+			<div class="bd-example">
+				<div class="alert alert-primary" role="alert">
+				  This is a primary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+				</div>
+				<div class="alert alert-secondary" role="alert">
+				  This is a secondary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+				</div>
+				<div class="alert alert-success" role="alert">
+				  This is a success alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+				</div>
+				<div class="alert alert-danger" role="alert">
+				  This is a danger alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+				</div>
+				<div class="alert alert-warning" role="alert">
+				  This is a warning alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+				</div>
+				<div class="alert alert-info" role="alert">
+				  This is a info alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+				</div>
+				<div class="alert alert-light" role="alert">
+				  This is a light alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+				</div>
+				<div class="alert alert-dark" role="alert">
+				  This is a dark alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+				</div>
+				</div>
+				
+				
+		</div>
+	</section>
+	
+	<section id="buttons">
+		<h1>Buttons</h1>
+		<p class="bd-lead">Use Bootstrap’s custom button styles for actions in forms, dialogs, and more with support for multiple sizes, states, and more.</p> 
+		<p>Bootstrap includes several predefined button styles, each serving its own semantic purpose, with a few extras thrown in for more control.</p>
+		<div class="bd-example">
+			<button type="button" class="btn btn-primary">Primary</button>
+			<button type="button" class="btn btn-secondary">Secondary</button>
+			<button type="button" class="btn btn-success">Success</button>
+			<button type="button" class="btn btn-danger">Danger</button>
+			<button type="button" class="btn btn-warning">Warning</button>
+			<button type="button" class="btn btn-info">Info</button>
+			<button type="button" class="btn btn-light">Light</button>
+			<button type="button" class="btn btn-dark">Dark</button>
+
+			<button type="button" class="btn btn-link">Link</button>
+		</div>
+		<h2>Outline buttons</h2>
+		<p>In need of a button, but not the hefty background colors they bring? Replace the default modifier classes with the <code class="highlighter-rouge">.btn-outline-*</code> ones to remove all background images and colors on any button.</p>
+		<div class="bd-example">
+			<button type="button" class="btn btn-outline-primary">Primary</button>
+			<button type="button" class="btn btn-outline-secondary">Secondary</button>
+			<button type="button" class="btn btn-outline-success">Success</button>
+			<button type="button" class="btn btn-outline-danger">Danger</button>
+			<button type="button" class="btn btn-outline-warning">Warning</button>
+			<button type="button" class="btn btn-outline-info">Info</button>
+			<button type="button" class="btn btn-outline-light">Light</button>
+			<button type="button" class="btn btn-outline-dark">Dark</button>
+		</div>
+		
+		<h2>Sizes</h2>
+		<p>Fancy larger or smaller buttons? Add <code class="highlighter-rouge">.btn-lg</code> or <code class="highlighter-rouge">.btn-sm</code> for additional sizes.</p>
+		<div class="bd-example">
+		<button type="button" class="btn btn-primary btn-lg">Large button</button>
+		<button type="button" class="btn btn-secondary btn-lg">Large button</button>
+		</div>
+	</section>
+ 
+  
+ 
+ 
+ 
+
+
+    </div>
+
+</body>
+</html>

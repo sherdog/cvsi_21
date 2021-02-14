@@ -1,0 +1,68 @@
+<style>
+	.galleryphotos .album-thumb{
+		min-height:150px;
+		border:1px solid #ccc;
+		margin-bottom:15px;
+		position:relative;
+			overflow:hidden;
+			margin:0 10px;
+	}
+	.galleryphotos .image{
+		padding:10px;
+		
+	}
+	.galleryphotos .owl-wrapper-outer{
+		border:none;
+		box-shadow:none;
+	}
+
+	.album-thumb .caption{
+	background-color: {{ caption_bg_color }};
+	top: -50%;
+	opacity: 0.8;
+	padding: 7px 15px;
+	position: absolute;
+	width: 100%;
+	color: {{ caption_text_clr }};
+	font-weight:bold;
+	z-index:99;
+	transition: all 0.5s ease;
+	}
+	.album-thumb:hover .caption{
+		top: 0px;
+		transition: all 0.5s ease;
+	}
+</style>
+<h3>{{ heading_title }}</h3>
+<div id="galleryphoto{{ module }}" class="owl-carousel galleryphotos">
+
+  {%for photo in photos %}
+  <div class="item">
+		<div class="album-layout">
+			<div class="album-thumb transition">
+			  <div class="image"><a href="{{ photo.popup }}" data-lightbox="example-set" data-title="{{ photo.title }}"><img src="{{ photo.image }}" alt="{{ photo.title }}" title="{{ photo.title }}" class="img-responsive center-block"/></a></div>
+			  	{%if photo.title %}
+			  <div class="caption">
+				<h4 class="text-center">{{ photo.title }}</h4>
+			  </div>  
+				{%endif%}			  
+			</div>
+	  </div>
+	</div>
+ {%endfor%}	
+  
+</div>
+<link href="catalog/view/javascript/lightbox/css/lightbox.min.css" rel="stylesheet" />
+<script src="catalog/view/javascript/lightbox/js/lightbox-plus-jquery.min.js"></script>
+<script type="text/javascript"><!--
+$('#galleryphoto{{ module }}').owlCarousel({
+	items: '{{ limit }}',
+	autoPlay: 3000,
+	navigation: true,
+	navigationText: ['<i class="fa fa-chevron-left fa-5x"></i>', '<i class="fa fa-chevron-right fa-5x"></i>'],
+	pagination: false
+});
+--></script>
+
+
+

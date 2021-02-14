@@ -1,0 +1,1251 @@
+<!doctype html>  
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	
+	<title>OpenCart 3 Documentation</title>
+	
+	 <meta name="description" content="So Emarket is multipurpose responsive OpenCart theme that designed for any online store like fashion store, auto parts, furniture store, electronics store, mobile store...">
+     <meta name="author" content="Opencartworks">
+     <meta name="copyright" content="Opencartworks">
+     <meta name="generator" content="Documenter v2.0 http://rxa.li/documenter">
+     <meta name="date" content="2017-02-08T07:50:52+01:00">
+	 <link rel="stylesheet" href="assets/css/theme.css" media="all">
+     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+	 <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet">
+     <link rel="stylesheet" href="assets/css/style.css" media="all">
+
+     <link rel="stylesheet" href="assets/js/google-code-prettify/prettify.css" media="screen">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,400italic,600,700" rel="stylesheet" type="text/css">
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.0/js/bootstrap.min.js"></script>
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+     <script src="assets/js/script.js"></script>
+</head>
+
+<body data-spy="scroll" data-target=".scrollspy">
+	
+	<div id="documenter_sidebar" class="scrollspy" >
+		<div class="side-nav-search">
+				<a href="index.html"> OpenCart 3 Documentation <span class="badge badge-light">v1.0</span></a>
+				<div role="search">
+				  <form id="rtd-search-form" class="wy-form" action="./search.html" method="get">
+					<input type="text" name="q" placeholder="Search docs" id="searchInput" onkeyup="searchFunction()">
+				  </form>
+				</div>
+		</div>
+		<div class="wy-menu wy-menu-vertical">
+			<p class="caption"><span class="caption-text">Home</span></p>
+				<ul class="nav" >
+					<li class="active"><a  href="#documenter_cover">Introduction </a></li>
+					<li><a href="#newopencart" title="System Requirements">What is OpenCart</a></li>
+					<li><a href="#requirement" title="System Requirements">System Requirements</a></li>
+					<li><a href="#faqopencart" title="System Requirements">FAQs Videos </a></li>
+				</ul>
+			<p class="caption"><span class="caption-text">Installing OpenCart</span></p>	
+				<ul class="nav" >
+					<li><a href="#installdefault" title="Installation">Install Default Opencart</a></li>
+					<li><a href="#installtheme" title="Install Theme">Install Theme</a>
+						<ul class="nav">
+						  <li><a href="#installtheme-step1">Step 1: Extensions Installer</a></li>
+						  <li><a href="#installtheme-step2">Step 2: Extensions Active</a></li>
+						  <li><a href="#installtheme-step3">Step 3: Access Permission</a></li>
+						  <li><a href="#installtheme-step4">Step 4: Rebuild your modification cache</a></li>
+						  <li><a href="#installtheme-step5">Step 5: Theme Control Panel</a></li>
+						</ul>
+					</li>
+					<li><a href="#installlanguage" title="Install Language">Install Language </a></li>
+					<li><a href="#installsimpleblog" title="Install Simple Blog">Install Simple Blog</a></li>
+					<li><a href="#installpurpletree" title="Install Purpletree Multivendor">Install Purpletree Multivendor</a></li>
+					<li><a href="#installrevolution" title="Install Slider Revolution ">Install Slider Revolution </a></li>
+					<li><a href="#installdesign" title="Install Product Designer ">Install Product Designer </a></li>
+				</ul>
+				
+			<p class="caption"><span class="caption-text">Theme Settings</span></p>	
+			<ul class="nav" >
+				<li><a href="#theme_feature" title="Select Layout">Product Feature </a></li>
+				<li><a href="#theme_general" title="Select Layout"> Main General Tabs</a>
+					<ul class="nav" >	
+						<li><a href="#theme_general_general" title="Theme Configuration">General Tab </a></li>
+						<li><a href="#theme_general_header" title="Select Layout">Header & Footer Tab  </a></li>
+						<li><a href="#theme_general_banner" title="Support">Banner Tab </a></li>
+					</ul>
+				</li>
+				<li><a href="#theme_layout" title="Select Layout">Layout Tab </a></li>
+				<li><a href="#theme_page" title=" Show Sticky Menu On Top ">Page Tab </a>
+					<ul class="nav" >	
+						<li><a href="#theme_page_category" title="Theme Configuration">Product Category </a></li>
+						<li><a href="#theme_page_detail" title="Select Layout">Product Detail  </a></li>
+						<li><a href="#theme_page_soon" title="Support">Coming Soon </a></li>
+					</ul>
+				</li>
+				<li><a href="#theme_font" title="Theme Configuration">Font Tab</a></li>	
+				<li><a href="#theme_social" title="Theme Configuration">Social Tab</a></li>
+				<li><a href="#theme_custom" title="Theme Configuration">Custom Tab</a></li>
+				<li><a href="#theme_advanced" title="Install Theme">Advanced Tab</a></li>
+				
+			</ul>
+			<p class="caption"><span class="caption-text">Mobile Settings</span></p>	
+			<ul class="nav" >
+				<li><a href="#mobile_general" title="Horizontal Menu Configuration">General Tab</a></li>
+				<li><a href="#mobile_bottombar" title="Horizontal Menu Configuration">Bottom Bar Tab </a></li>
+				<li><a href="#mobile_leftbar" title="Extension Configuration">Left Bar Tab</a></li>
+				<li><a href="#mobile_page" title="Sidebar Social">Page Tab</a></li>
+				<li><a href="#mobile_font" title="Product Category">Font Tab</a></li>
+				<li><a href="#mobile_advanced" title="Product Detail">Advanced Tab</a></li>
+			</ul>
+			<p class="caption"><span class="caption-text">Module Settings</span></p>
+			<ul class="nav" >	
+				<li><a href="#extensionconfiguration" title="Theme Configuration">Extension Config</a></li>
+				<li><a href="#module_pagebuilder" title="Select Layout">So Page Buider </a></li>
+				<li><a href="#horizontalmenu" title="Select Layout">Horizontal Menu  </a></li>
+				<li><a href="#verticalmenu" title=" Show Sticky Menu On Top ">Vertical Menu  </a></li>
+			</ul>
+			<p class="caption"><span class="caption-text">Help & Support</span></p>
+			<ul class="nav" >	
+				<li><a href="#support1" title="Support">Help & Support</a></li>
+				<li><a href="#support2" title="Support">What do we support and do not support?</a></li>
+			</ul>
+		</div>
+		
+		<div id="documenter_copyright">
+			Copyright SmartAddons 2017<br>
+			made with the <a href="http://rxa.li/documenter">Documenter v2.0</a> 
+		</div>
+	</div>
+	
+	<div id="documenter_content" class="rst-content clearfix">
+		<section id="documenter_cover">
+		
+			<h1>Introduction</h1>
+			<a href="http://www.opencartworks.com/category/opencart-themes/themes-on-site/" target="_blank">
+			<figure class="img-polaroid">
+				<img class="img-thumbnail" alt=""src="http://images.smartaddons.com/Open-cart-theme/so-document/top-opecart-3-themes.jpg" />
+			</figure>
+			</a>
+			<h5 align="justify">Congratulations on your purchase of an OpenCart template! This documentation consists of several parts and describes the installation, configuration and setting up an OpenCart website process.</h5>
+			
+			<h5 align="justify">We did our best to make this manual information to be presented in a simple way. As an effective reference, the documentation below will provides all information you need, it has been restructured in different chapters, you can see in the left-side menu. You are able to navigate to any part of the documentation using the active content headers' links.</h5>
+			
+			<h5 align="justify">We recommend that you should start reading the documentation at the first section.</h5>
+
+			
+			<hr>
+			<div id="documenter_buttons">
+				
+				<a href="http://support.opencartworks.com/" class="btn btn-outline-info">Support</a>		
+			</div>
+			
+		</section>
+		
+		<section id="newopencart">
+			<h1>What is OpenCart? </h1>
+			
+			<div class="sub_content">
+				<p align="justify">OpenCart — is an Open Source e-commerce application. OpenCart provides easy customization of your online store.
+        OpenCart community includes a number of users starting from the experienced web developers looking for the
+        user-friendly interface, ending with shopkeepers that start their online business for the first time. OpenCart
+        provides a great amount of features that allow you to control your store. Using OpenCart tools you can easily
+        uncover the store potential.
+    		</p>
+			<p><a href="http://docs.opencart.com/en-gb/getting-started/" target="_blank" class="btn btn-outline-info"> Document Opencart</a> 
+				<a href="http://www.opencartworks.com/opencart-3-0-what-expect-whats-news/" class="btn btn-outline-info" target="_blank"> What`s new in Opencart 3</a></p>
+			
+			<div class="admonition note">
+			<p class="first admonition-title">Note</p>
+			<p class="last">Usually there is a vast of different settings that available with a new Template, and because this is an  open source software, it isn't always the same for each developer. Make sure to read through this documentation available for the Template that you are installing so that you know what features are available for you.</p>
+			</div>
+
+			</div>
+		</section>
+
+		<section id="requirement">
+			<h1>System Requirements</h1>
+			
+			<div class="sub_content">
+				<p>System Requirements for Opencart:</p>
+				 <a href="http://www.smartaddons.com/documentation/system-requirements-for-opencart/" target="_blank" class="btn btn-outline-info"> Click here</a>
+			</div>
+		</section>
+		
+		<section id="faqopencart">
+			<h1>FAQs Videos  </h1>
+			
+			<div class="sub_content">
+				<p>In this article, we will guide you some instructions and tips in term of configuration on OpenCart Theme.</p>
+
+ 				<a href="http://www.smartaddons.com/documentation/faqs-videos-collection-about-configuration-on-opencart-theme/" target="_blank" class="btn btn-outline-info"> Click here</a>
+			
+			</div>
+		</section>
+
+		<section id="installdefault">
+			<h1>How to install OpenCart 3 </h1>
+			
+			<div class="sub_content">
+				<p>You read user-guide to install default OpenCart: </p>
+				<a href="http://docs.opencart.com/installation/" target="_blank" class="btn btn-outline-info"> Click here</a>
+
+			</div>
+		</section>
+ 
+		<section id="installtheme" >
+			<h1>How to install SO Theme for OpenCart 3</h1>
+			<div class="section">
+			<p> <a href="https://www.youtube.com/watch?v=AKZpCnxH25E" target="_blank" class="btn btn-danger  thumb-video"> <i class="fa fa-youtube"></i></a><b>Video  to view user-guide to install Theme</b></p>
+
+			<h2 id="installtheme-step1">1. Extensions Installer</h2>
+			<p> Go to <b>Extensions</b>  ›  <b>Installer</b>  ›  Click <b>Upload</b> and select the <code>so3_emarket_template_oc3.0.0_v1.0.0.ocmod.zip</code> file to upload. Then you will see the message <b class="text-success">Success: You have installed your extension!</b></p>
+			<figure class="img-polaroid">
+				<img class="img-thumbnail" alt="" src="http://images.smartaddons.com/Open-cart-theme/so-bestshop-opencart3/install-theme/step1.png" />
+			</figure>
+			<div class="admonition note">
+				<p class="first admonition-title">Note:</p>
+				If you get this error: file could not be uploaded, you can do these steps
+				<p>Make sure your PHP value requirements look like:</p>
+				
+				<div class="highlight-default last">
+			<div class="highlight ">
+			<pre>max_execution_time=3000
+max_input_vars = 25000
+post_max_size=350M
+upload_max_filesize=200M</pre>
+			</div>
+			</div>
+			</div>
+			
+			<div class="admonition important">
+				<p class="first admonition-title">Important </p>
+				<p>Or you can try install the theme via FTP/Cpanel</p>
+				<ol class="sub_content">
+					<li>Please upload the theme package to your root file </li>
+					<li>Use cpanel account to unzip it </li>
+					<li>Move all folders into ‘upload’ folder to Root folder</li>
+					<li>Go to Admin  ›  Extensions  ›  Extensions  ›  filter Modules  ›  Click install Theme control panel module</li>
+					<li>After that, go to Admin  ›  Extensions  ›  Modifications  ›  click Refresh button</li>
+					<li>Try go to Admin  ›  Systems ›  Users  ›  User groups  ›  Edit administrator  › click Select All >> Save</li>
+				</ol>
+				
+			</div>
+					
+			<h2 id="installtheme-step2">2. Extensions Active</h2>
+			<p> Go to <b>Extensions</b> › <b> Extensions</b> › Click <b>Install</b> button </p>
+			<figure class="img-polaroid">
+				<img class="img-thumbnail" alt="" src="http://images.smartaddons.com/Open-cart-theme/so-bestshop-opencart3/install-theme/step2.png" />
+			</figure>
+					
+			<h2 id="installtheme-step3">3. Access Permission</h2>
+			<p> Go to <b>System</b> › <b> User</b> › <b>User Group</b> › Click <b>Edit</b> button › Then you click <b>Select All</b> button</p>
+			
+			<figure class="img-polaroid">
+				<img class="img-thumbnail" alt="" src="http://images.smartaddons.com/Open-cart-theme/so-bestshop-opencart3/install-theme/step33.png" />
+			</figure>
+			
+					
+			<h2 id="installtheme-step4">4. Rebuild your modification cache</h2>
+			<p> Go to <B>Extensions</b> › <b>Modifications</b> › Click <b>Refresh</b> button  to rebuild your modification cache</p>
+			<figure class="img-polaroid">
+				<img class="img-thumbnail" alt="" src="http://images.smartaddons.com/Open-cart-theme/so-bestshop-opencart3/install-theme/step44.png" />
+			</figure>
+			
+					
+			<h2 id="installtheme-step5">5. Theme Control Panel</h2>
+			<p> Go to <b>Extensions</b> › <b>Theme Control Panel</b> and edit your store: <b>General Tab, Layout Tab, Page Tab...</b></p>
+			
+			<figure class="img-polaroid">
+				<img class="img-thumbnail" alt="" src="http://images.smartaddons.com/Open-cart-theme/so-bestshop-opencart3/install-theme/step55.png" />
+			</figure>
+			</div>
+		</section>
+	 
+ 
+	<section id="installlanguage">
+		<h1>Install Language & Override Language</h1>
+
+		<div class="sub_content">
+			<p> <a href="http://images.smartaddons.com/Open-cart-theme/support/video-guide/install_language.webm" target="_blank" class="btn btn-danger thumb-video"> <i class="fa fa-youtube"></i></a><b>How to install language? (example: turkey)</b></p>
+
+			<h2>1. Install Laguage </h2>
+			<p>This time, you will learn how to make your OpenCart 3 store available in multiple languages.</p>
+			<p> You can read more information: <strong><a href="https://www.opencart.com/index.php?route=cms/blog/info&blog_id=227" target="_blank" class="btn btn-outline-info"> Click here</a></strong></p>
+			
+
+			<h2>2.How to manage content, products and categories translations</h2>	
+			<div class="admonition note">
+			<p class="first admonition-title">Note</p>
+			<p class="last">When you install multi language the default language is arabic, it is not an error. Please You enter your content</p>
+			</div>
+			
+			<ol class="steps">
+				<li>
+					Usually, Opencart top menu displays Categories. Navigate to Catalog ›  Categories, select the category you would like to translate, click the Edit icon and insert translation into corresponding language tab of the category:
+					<figure class="img-polaroid">
+						<img class="img-thumbnail"src="http://images.smartaddons.com/Open-cart-theme/so-document/manage-translations-1.jpg">
+					</figure>
+				</li>
+				<li>
+					Navigate to Catalog -> Products to start products translation. Select the product you would like to translate, click the Edit icon next to it and insert translations into the General tab of a product:
+					<figure class="img-polaroid">
+						<img class="img-thumbnail"src="http://images.smartaddons.com/Open-cart-theme/so-document/manage-translations-2.jpg">
+					</figure>
+				</li>
+				<li>
+					In case you would like to translate one of content pages on the site, open the Catalog -> Information tab, select the page required and insert translations into the corresponding language tab of content editor.
+
+				</li>
+				<li>
+					Navigate to Opencartworks -> So Themes Config to start  translation,  insert translations into the content:
+					<p></p>
+					<div class="admonition note">
+					<p class="first admonition-title">Note</p>
+					<p class="last">Because there are so many modules, Select the module you would like to translate. Insert translations into the content</p>
+					</div>
+					<figure class="img-polaroid">
+						<img class="img-thumbnail"src="http://images.smartaddons.com/Open-cart-theme/so-document/manage-translations-4.jpg">
+					</figure>
+					
+					<figure class="img-polaroid">
+						<img class="img-thumbnail"src="http://images.smartaddons.com/Open-cart-theme/so-document/manage-translations-3.jpg">
+					</figure>
+					
+				</li>
+				<li>
+					Refresh the front-end with the Ctrl/Cmd+F5 hotkeys to check the changes.
+				</li>
+				
+			</ol>
+			
+			
+			
+			
+			<h2>3. How to use translate Language in Module</h2>	
+			<p>
+				If the module has language files for English and you want to translate them for Spanish, then at the very first copy all the language files from English language directory and paste
+				all of them in Spanish directory in the same structure as it was in English language.
+
+			</p>
+			<ol class="steps" >
+			  <li>Extract the language archive file which you downloaded into your PC: <code>patch_language_v3.x</code></li>
+			  <li>
+				 We filter out language files  of theme and modules:
+				 <p></p>
+						<div class="highlight-default"><div class="highlight"><pre>
+- patch_language_v3.x\admin\language\en-gb
+- patch_language_v3.x\catalog\language\en-gb</pre></div>
+				</div>
+				<p>To your language: replace "en-gb" with the name of the language (English, German...).</p>
+			  </li>
+			  <li>Upload <b>admin and catalog</b> folders you replaced into your OpenCart folder </li>
+
+			  <li>
+					Then please go to <b>catalog</b> => <b>language</b>  =>  <b>extension</b> => you make translates language all files below
+					<figure class="img-polaroid">
+						<img class="img-thumbnail"src="http://images.smartaddons.com/Open-cart-theme/so-document/module-translations-1.jpg">
+					</figure>
+					<p>
+					For example, there is a file in module directory for English language called foo.php then copy this into the module directory of Spanish language.
+					</p>
+					<p>Suppose Enlish file has these keyword to be translated as below screenshot.</p>
+				</li>
+				<li>
+					Refresh the front-end with the Ctrl/Cmd+F5 hotkeys to check the changes.
+				</li>
+			 
+			</dl>
+
+			
+		</div>
+	</section>
+
+	<section id="installsimpleblog">
+	<h1>Install Simple Blog</h1>
+	<div class="sub_content">
+		
+		<ol class="steps">
+			<li>Go to <b>Admin  ›  Simple Blog  › articles </b>. Missing Database Tables for this Extension, Click 'Install simple blog'</p></li>
+			<li>You must create a new author, new category, new article </li>
+			<li>Go to <b>Admin  › Simple Blog › Setting  › General Setting</b>. set values properties for for simple blog. Click Save</li>
+			<li>To view simple blogs outside you address type <code>index.php?route=extension/simple_blog/article</code> or <b>Admin > Menu Simple blog > General Setting > Simple Blog Seo Keyword Heading </b> (This name will be as seo keyword when simple blog is clicked)</li>
+			<li>Create page blogs :
+				<b>Design › Layouts › Create new blog layout › set route: extensions/simple_blog/% </b>
+				<p>add module for content postion (see Layout default)</p>
+			</li>
+
+
+		</ol>
+	
+	
+	</div>
+	</section>
+	
+    <section id="installpurpletree">
+	<h1>Install Purpletree Multivendor</h1>
+	<div class="sub_content">
+		<ol class="steps">
+			<li>Install this theme successfully</li>
+			<li>Download Multivendor module from <a href="https://www.opencart.com/index.php?route=marketplace/extension/info&extension_id=31461&filter_download_id=56&filter_rating=2&sort=date_added" target="_blank" class="btn btn-outline-info"> Click here</a>.Install/configure it following their guide. </li>
+			<li>Please configure the multivendor :
+				
+				Go to  <b>Admin ›  Extensions ›  Module ></b>  Click 2 module (Purpletree Multivendor Settings, Purpletree Seller Panel	)
+				<p><b>Module Purpletree Multivendor Settings </b></p>
+				<figure class="img-polaroid">
+					<img class="img-thumbnail"src="http://images.smartaddons.com/Open-cart-theme/so-document/purpletree-1.png">
+				</figure>
+			
+				<p><b> Module Purpletree Seller Panel :</b> config show enable</p>
+				
+				
+			</li>
+			<li>
+				Go to <b>Admin ›  Design › Layouts › Account › Column Right : </b> add module Purpletree Seller Panel
+				<figure class="img-polaroid">
+					<img class="img-thumbnail"src="http://images.smartaddons.com/Open-cart-theme/so-document/purpletree-2.png">
+				</figure>
+			</li>
+			<li>Install the file <b>so3_emarket_purpletree_multivendor_v108.ocmod.zip</b> </li>
+			
+		    <li> Go to  <b>Admin</b> > <b>Extensions</b> > <b>Modification</b> and click on the Blue Refresh button to apply changes..</li>
+		    <li>Once done, clear the cache. Dashboard > Click gear icon to clear cache
+		    	<figure class="img-polaroid">
+					<img class="img-thumbnail"src="http://images.smartaddons.com/Open-cart-theme/so-document/purpletree-3.png">
+				</figure>
+		    </li>
+		    <li>Refresh your store's front page you should see the theme installed successfully. </li>
+		</ol>
+	
+	
+	</div>
+	</section>
+
+		<section id="installrevolution">
+	<h1>Slider Revolution Responsive Opencart</h1>
+	<div class="sub_content">
+		
+		<div class="admonition note">
+			<p class="first admonition-title">Note</p>
+			<div class="last"><p>Download Slider Revolution Opencart form 
+			<a href="https://codecanyon.net/item/slider-revolution-responsive-opencart-module/9994648?s_rank=2" target="_blank" class="btn btn-outline-info"> Click Here </a> and Read Slider Revolution Documentation</p>
+			</div>
+		</div>
+		<ol class="steps">
+			<li>
+				Unzip the download package of Slider Revolution. Upload <b>admin</b>, <b>catalog</b>, <b>image</b> &amp; <b>system</b> file in your root directory.(<b>Note:</b> If you are an existing revslider 2.3 user , please rename your <b>system&gt;config&gt;revslider</b> folder)
+				<figure class="img-polaroid">
+					<img class="img-thumbnail"src="http://images.smartaddons.com/Open-cart-theme/so-document/installation_01.jpg">
+				</figure>
+
+			</li>
+			<li>
+				Navigate <b>Extensions &gt; Extensions</b> , Select <b>Modules</b> on extension type.
+				<figure class="img-polaroid">
+					<img class="img-thumbnail"src="http://images.smartaddons.com/Open-cart-theme/so-document/installation_03.png">
+				</figure>
+			</li>
+			<li> Install <b>Revolution Slider OpenCart & Revolution Slider Output</b> This will take some time.please wait untill it finishes installation.
+				<figure class="img-polaroid">
+					<img class="img-thumbnail"src="http://images.smartaddons.com/Open-cart-theme/so-document/installation_04.png">
+				</figure>
+				<figure class="img-polaroid">
+					<img class="img-thumbnail"src="http://images.smartaddons.com/Open-cart-theme/so-document/installation_05.png">
+				</figure>
+			</li>
+			<li>
+				Navigate <b>System &gt; Users &gt; User Groups</b>, then click on <b>Edit</b> button of <b>Administration</b>.
+				<figure class="img-polaroid">
+					<img class="img-thumbnail"src="http://images.smartaddons.com/Open-cart-theme/so-document/installation_06.png">
+				</figure>
+
+			</li>
+			<li>
+				 Click on <b>Select All</b> both <b>Access Permission</b> and <b>Modify Permission</b>, then Save these settings.
+				<figure class="img-polaroid">
+					<img class="img-thumbnail"src="http://images.smartaddons.com/Open-cart-theme/so-document/installation_07.png">
+				</figure>
+			</li>
+			<li>
+				Navigate <b>Extensions &gt; Modifications</b>, then click on <b>Refresh</b> button.
+				<figure class="img-polaroid">
+					<img class="img-thumbnail"src="http://images.smartaddons.com/Open-cart-theme/so-document/installation_08.png">
+				</figure>
+			</li>
+			<li>
+				 Refresh the front-end with the Ctrl/Cmd+F5 hotkeys to check the changes.
+			</li>
+		</ol>
+		<h1>Show The Slider on Home page</h1>
+		<p>Navigate <b>Extensions &gt; Extensions &gt; Revolution Slider Output</b> : Edit</p>
+		<figure class="img-polaroid">
+					<img class="img-thumbnail"src="http://images.smartaddons.com/Open-cart-theme/so-document/s_slider_01.png">
+		</figure>
+
+		<p>Set a Module Name and Slider</p>
+		<figure class="img-polaroid">
+					<img class="img-thumbnail"src="http://images.smartaddons.com/Open-cart-theme/so-document/installation_09.png">
+		</figure>
+
+		<p>Navigate <b>Opencartwork &gt; So Page Builder: Home 1</b></p>
+		<figure class="img-polaroid">
+				<img class="img-thumbnail"src="http://images.smartaddons.com/Open-cart-theme/so-document/s_slider_02.jpg">
+		</figure>
+	</div>
+	</section>
+
+ 	<section id="installdesign">
+	<h1>Opencart Custom Product Designer</h1>
+	<div class="sub_content">
+		<div class="admonition note">
+			<p class="first admonition-title">Note</p>
+			<div class="last"><p>Download Opencart Custom Product Designer form 
+				<a href="https://codecanyon.net/item/opencart-custom-product-designer/11662636?s_rank=1" target="_blank" class="btn btn-outline-info"> Click Here </a> and Read Custom Product Designer Documentation</p>
+			</div>
+		</div>
+		<ol class="steps">
+			<li>Installed <a href="https://github.com/vqmod/vqmod/wiki" target="_blank" rel="noopener noreferrer">vQmod</a>. (<strong><a href="https://github.com/vqmod/vqmod/wiki/Installing-vQmod-on-OpenCart" target="_blank" rel="noopener noreferrer">How to install vQmod on Opencart?)</a></strong></li>
+			
+			<li>Extract the archive file on your machine that you’ve downloaded from CodeCanyon. We included install packet and document in this file. Please choose folder compatibility with version of Opencart.</li>
+			
+			<li>Upload the 4 folders found inside <b>(admin, catalog, tshirtecommerce, vqmod)</b>
+				<figure class="img-polaroid">
+					<img class="img-thumbnail" src="http://docs.tshirtecommerce.com/opencart/wp-content/uploads/2017/10/opencart-custom-product-designer-module-intall-step-1.png" alt="" >
+				</figure>
+				 to your OpenCart root installation and merge them with the existing ones.
+			</li>
+
+			<li>
+
+				Navigate<b> Extensions > Extensions </b>, Select Modules on extension type.find <strong>T-Shirt eCommerce</strong> Module and click on the green <b>Install </b>button.<br>
+
+			<figure class="img-polaroid">
+					<img class="alignnone size-full wp-image-275" src="http://docs.tshirtecommerce.com/opencart/wp-content/uploads/2017/10/Modules.png" alt="" >
+			</figure>
+
+			</li>
+
+			<li>
+				Navigate <b>System &gt; Users &gt; User Groups</b>, then click on <b>Edit</b> button of <b>Administration</b>.
+				<figure class="img-polaroid">
+					<img class="img-thumbnail"src="http://images.smartaddons.com/Open-cart-theme/so-document/installation_06.png">
+				</figure>
+
+			</li>
+			<li>
+				 Click on <b>Select All</b> both <b>Access Permission</b> and <b>Modify Permission</b>, then Save these settings.
+				<figure class="img-polaroid">
+					<img class="img-thumbnail"src="http://images.smartaddons.com/Open-cart-theme/so-document/installation_07.png">
+				</figure>
+			</li>
+			<li>
+				Navigate <b>Extensions &gt; Modifications</b>, then click on <b>Refresh</b> button.
+				<figure class="img-polaroid">
+					<img class="img-thumbnail"src="http://images.smartaddons.com/Open-cart-theme/so-document/installation_08.png">
+				</figure>
+			</li>
+			<li>
+				 Refresh the front-end with the Ctrl/Cmd+F5 hotkeys to check the changes.
+			</li>
+		</ol>
+	</div>
+	<h1>How To Add New Product Design </h1>
+	<p><a href="http://docs.tshirtecommerce.com/opencart/article/add-new-product-design/" target="_blank" class="btn btn-outline-info"> Click here</a></p>
+	</section>
+
+ 	<section id="theme_feature">
+	<h1>Theme Feature</h1>
+	<div class="sub_content">
+		<p> <a href="http://images.smartaddons.com/Open-cart-theme/support/video-guide/featured_product.webm" target="_blank" class="btn btn-danger  thumb-video"> <i class="fa fa-youtube"></i></a><b>Video  to How to add Featured product</b></p>
+		<p>Go to  <b> admin › OpenCartWorks › So Themes Config  › Button Product Feature  </b>  </p>
+		<figure class="img-polaroid">
+			<img class="img-thumbnail"src="http://images.smartaddons.com/Open-cart-theme/so-document/theme_feature-1.png">
+		</figure>
+		
+		<p>Click on product to create features product. Any product added config features will have labels so feature</p>
+		<figure class="img-polaroid">
+			<img class="img-thumbnail"src="http://images.smartaddons.com/Open-cart-theme/so-document/theme_feature-2.png">
+		</figure>
+
+		<figure class="img-polaroid">
+			<img class="img-thumbnail"src="http://images.smartaddons.com/Open-cart-theme/so-document/theme_feature-3.png">
+		</figure>
+	</div>
+	</section>
+ 	<section id="theme_general">
+		<h1> Main General Tabs </h1>
+
+		<h1 id="theme_general_general">Tab General </h1>
+		<div class="sub_content">
+		  <p>Go to <b>OpenCartWorks</b> ›  <b>So Themes Config </b> ›  <b>General Tab</b> </p>
+			<figure class="img-polaroid">
+				<img class="img-thumbnail"src="http://images.smartaddons.com/Open-cart-theme/so-document/theme_general-1.jpg">
+			</figure>
+
+			<p><strong>1.Select Layout</strong> - Choose the layout that you like. Click button Apply Default Setting Choose the Layout </p>
+			<ul>
+				<li><code>New Color</code> - Set name color (do not uppercase letters) and fill color. Continue Click button Compile CSS. </li>
+				<li><code>Select Color</code> - Select the color you just created › Click button Save</li>
+				
+			</ul>
+						
+			<p><strong>2.Sticky Menu on Top </strong> - When the user scrolls the page,  Sticky Menu to the top of the browser window during scrolling </p>
+			<figure class="img-polaroid">
+					<img class="img-thumbnail"src="http://images.smartaddons.com/Open-cart-theme/so-document/theme_general-2.jpg">
+			</figure>
+			<ul>
+				<li><code>Status</code> - Option (yes|no)</li>
+				<li><code>Select Block on header</code> - Choose your parts you want to show on the sticky Menu</li>
+				
+			</ul>
+			
+			<p><strong>3.Top Bar </strong>  </p>
+			<figure class="img-polaroid">
+					<img class="img-thumbnail"src="http://images.smartaddons.com/Open-cart-theme/so-document/theme_general-3.jpg">
+			</figure>
+			<ul>
+				<li><code>Telephone No</code> - is the content of Telephone</li>
+				<li><code>Welcome Message</code> - is the content of Welcome Message</li>
+				<li><code>Checkout Link</code> -  show the link checkout</li>
+				<li><code>Language/Currency</code> -  show the Language/Currency </li>
+				
+			</ul>
+			<p><b>View Frontend:</b></p>
+			<figure class="img-polaroid">
+					<img class="img-thumbnail"src="http://images.smartaddons.com/Open-cart-theme/so-document/theme_general-4.jpg">
+			</figure>
+			<p><strong>4.General </strong>  </p>
+			<figure class="img-polaroid">
+					<img class="img-thumbnail"src="http://images.smartaddons.com/Open-cart-theme/so-document/theme_general-5.jpg">
+			</figure>
+			<ul>
+				<li><code>Preloader</code> -  want to show the Preloader</li>
+				<li><code>Preloader Animation</code> -  Choose the preloader that you like</li>
+				<li><code>Status Payment</code> -  want to show the Payment</li>
+				<li><code>Image (Payment block)</code> - Choose a image path </li>
+				<li><code>Copyright</code> - It is the content to Copyright</li>
+				
+			</ul>
+			<p><b>View Frontend:</b></p>
+			<figure class="img-polaroid">
+					<img class="img-thumbnail"src="http://images.smartaddons.com/Open-cart-theme/so-document/theme_general-6.jpg">
+			</figure>
+
+		</div>
+
+		<h1 id="theme_general_header">Tab Header & Footer  </h1>
+		<div class="sub_content">
+		  	<p> Choose the type of Header that you like, to pair with home page</p>
+			<figure class="img-polaroid">
+					<img class="img-thumbnail"src="http://images.smartaddons.com/Open-cart-theme/so-document/theme_general-7.jpg">
+			</figure>
+		</div>
+
+		<h1 id="theme_general_banner">Tab Banner </h1>
+		<div class="sub_content">
+		  <p>  Hover over image below to see effect.Choose the banner that you like</p>
+		  	<figure class="img-polaroid">
+					<img class="img-thumbnail"src="http://images.smartaddons.com/Open-cart-theme/so-document/theme_general-8.jpg">
+			</figure>
+		</div>
+
+	</section>
+	
+
+	<section id="theme_layout">
+		<h1>Layout Tab </h1>
+		<div class="sub_content">
+		  	<p>Go to  <b> admin › OpenCartWorks › So Themes Config  › Layout Tab </b> › With the boxed layout you can choose additional options such as custom background images, patterns and solid colors</p>
+
+			<figure class="img-polaroid">
+				<img class="img-thumbnail"src="http://images.smartaddons.com/Open-cart-theme/so-document/theme_layout-1.jpg">
+			</figure>
+			<ul>
+				<li><code>Layout Style</code> - Select one in option  (Default|Layout fluid|Layout boxed)  </li>
+				<li><code>Body Background Color</code> -  Set background color for Mainbody</li>
+				<li><code>Overlay pattern</code> - Set pattern image  for Mainbody</li>
+				<li><code>Background Image:</code> - Set background image  for Mainbody</li>
+				<li><code>Background Image display mode </code> - Set background image display mode</li>
+				<li><code>Background Image display Attachment </code> - Set background image display attachment</li>
+				
+			</ul>
+			<p><b>View Frontend:</b> Layout Style = boxed</p>
+			<figure class="img-polaroid">
+				<img class="img-thumbnail"src="http://images.smartaddons.com/Open-cart-theme/so-document/theme_layout-2.jpg">
+			</figure>
+		</div>
+	</section>
+
+	<section id="theme_page">
+		<h1>Page Tab </h1>
+
+	
+		<h1 id="theme_page_category">Product Category  </h1>
+		<div class="sub_content">
+			<p>Go to  <b> admin › OpenCartWorks › So Themes Config  › Page Tab › Product Category </b>  </p>
+
+		    <figure class="img-polaroid">
+				<img class="img-thumbnail"src="http://images.smartaddons.com/Open-cart-theme/so-document/theme_page_category-1.jpg">
+			</figure>
+			
+			<p><strong>1.Layout Category & Product</strong> </p>
+			<ul>
+				<li><code>Display column position</code> - Select one in option ( Outside content| Inside content)</li>
+				<li><code>Display column type</code> - Add page content inside this div if you want the side nav to push page content to the right</li>
+				<li><code>Sticky Sidebar</code> - Attach sidebar to the page when the user scrolls such that the element is always visible</li>
+				
+			</ul>
+			<p><strong>2.Category Info</strong> </p>
+			<ul>
+				<li><code>Display subcategory</code> - You want to show the subcategory</li>
+				<li><code>Choose subcategory grid number</code> - Quantity is displayed subcategory</li>
+				<li><code>Display category info</code> - You want to show description category</li>
+				<li><code>Choose Product grid number</code> - Column number display page category</li>
+				
+			</ul>
+			<p><strong>3.Product Item</strong> </p>
+			<ul>
+				<li><code>Show "Discount"</code> - Options (yes/no) </li>
+				<li><code>Show countdown </code> - Show countdown of Special Offer product</li>
+				<li><code>Show Ratings</code> - Options (yes/no)</li>
+				<li><code>Show Orders</code> - show order number of product</li>
+				<li><code>Show image gallery</code> - Slider image gallery</li>
+				<li><code>Status use placeholder images</code> - Options(yes/no)</li>
+				
+			</ul>
+
+			<p><strong>4.Group Cart </strong> </p>
+			<ul>
+				<li><code>Show position cart info</code> - select align (Left|Right|Center|Bottom) position group cart</li>
+				<li><code>Show "QuickView" Button</code> - Options (yes/no)</li>
+				<li><code>Show "Addtocart " Button</code> - Options (yes/no)</li>
+				<li><code>Show "Wishlist " Button</code> - Options (yes/no)</li>
+				<li><code>Show "Compare " Button</code> - Options (yes/no)</li>
+				
+			</ul>
+			<p><b>View Frontend:</b> The options on the create <a href="http://opencart.opencartworks.com/themes/so_emarket/index.php" target="_blank">Menu features </a></p>
+			<figure class="img-polaroid">
+				<img class="img-thumbnail"src="http://images.smartaddons.com/Open-cart-theme/so-document/theme_page_category-2.jpg">
+			</figure>
+		</div>
+		
+		<h1 id="theme_page_detail">Product Detail  </h1>
+		<div class="sub_content">
+			<p>Go to  <b> admin › OpenCartWorks › So Themes Config  › Page Tab › Product Category › Product page</b>  </p>
+		    <figure class="img-polaroid">
+				<img class="img-thumbnail"src="http://images.smartaddons.com/Open-cart-theme/so-document/theme_page_detail-1.jpg">
+			</figure>
+			
+			<p><strong>1.Options Styles</strong> </p>
+			<ul>
+				<li><code>Option Checkbox and Radio Style</code> - refreshing the default option is more beautiful</li>
+				
+			</ul>
+			<p><strong>2.Product Page</strong> </p>
+			<ul>
+				<li><code>Product gallery</code> - Select one in option ( Gallery Bottom| Gallery Left| Gallery Grid |  Gallery list |  Gallery Slider)</li>
+				<li><code>Enable Product Zoom</code> - Options (yes/no)</li>
+				<li><code>Enable Size Chart</code> - add product image size chart </li>
+				<li><code>Tabs block</code> - Select one in option(vertical|horizontal)</li>
+				<li><code>Enable Button Show More</code> - Add  button (show more)  on product description, click button (show more) show full description</li>
+				<li><code>Show Shipping & Payment</code> - Add new tabs Shipping & Payment </li>
+				
+			</ul>
+			<p><strong>3.Social Share</strong> </p>
+			<ul>
+				<li><code>Show Custom</code> - Options (yes/no) </li>
+				<li><code>Custom Content </code> - Write content to Custom</li>
+				
+			</ul>
+			<p><strong>4.Social Share</strong> </p>
+			<ul>
+				<li><code>Show Related</code> - Options (yes/no) </li>
+				<li><code>Related product number per row </code> - Column number display related product</li>
+				
+			</ul>
+			<p><b>View Frontend:</b> The options on the create <a href="http://opencart.opencartworks.com/themes/so_emarket/index.php" target="_blank">Menu features </a></p>
+			<figure class="img-polaroid">
+				<img class="img-thumbnail"src="http://images.smartaddons.com/Open-cart-theme/so-document/theme_page_category-2.jpg">
+			</figure>
+		</div>
+
+		<h1 id="theme_page_soon">Comming Soon  </h1>
+		<div class="sub_content">
+			<p>Go to  <b> admin › OpenCartWorks › So Themes Config  › Page Tab › Coming Soon </b>  </p>
+		    <figure class="img-polaroid">
+				<img class="img-thumbnail"src="http://images.smartaddons.com/Open-cart-theme/so-document/theme_page_soon-1.jpg">
+			</figure>
+			
+			<ul>
+				<li><code>Coming Soon Background</code> - Set background image  for Coming Soon </li>
+				<li><code>Coming Soon Title</code> -  is the heading of Coming Soon</li>
+				<li><code>Date</code> - is the dates of coming soon</li>
+				<li><code>Content</code> - is the content of coming soon  </li>
+				
+			</ul>
+			<p><b>View Frontend:</b> </p>
+			<figure class="img-polaroid">
+				<img class="img-thumbnail"src="http://images.smartaddons.com/Open-cart-theme/so-document/theme_page_soon-2.jpg">
+			</figure>
+		</div>
+	</section>
+
+	<section id="theme_font">
+		<h1>Font tab</h1>
+		<div class="sub_content">
+			<p>Go to  <b> admin › OpenCartWorks › So Themes Config  › font Tab  </b>  </p>
+			 <figure class="img-polaroid">
+				<img class="img-thumbnail"src="http://images.smartaddons.com/Open-cart-theme/so-document/theme_font-1.jpg">
+			</figure>
+			<ul>
+				<li><code>Font Setting standard</code> - It is the default fonts of the system </li>
+				<li><code>Font Setting Google Fonts</code> - It is the Google fonts, fast, and open through great typography.</li>
+				<li><code>Google URL</code> - Example: http://fonts.googleapis.com/css?family=Roboto:400,500,700 <a href="https://www.google.com/fonts">⇒ View More</a></li>
+				<li><code>Google Family</code> - Example: Roboto, sans-serif;</li>
+				<li><code>Add css selectors</code> - is the css selectors of setting </li>
+				
+			</ul>
+		
+		</div>
+	</section>
+
+ 
+	<section id="theme_social">
+		<h1>Social Tab</h1>
+		<div class="sub_content">
+			<p>Go to  <b> admin › OpenCartWorks › So Themes Config  › social Tab  </b>  </p>
+			 <figure class="img-polaroid">
+				<img class="img-thumbnail"src="http://images.smartaddons.com/Open-cart-theme/so-document/theme_social-1.jpg">
+			</figure>
+		
+		    <ul>
+				<li><code>Show sidebar social</code> - It is the default fonts of the system </li>
+				<li><code>Show Facebook</code> - Options (yes/no)</li>
+				<li><code>Facebook ID</code> - is the Account Facebook.<br> For example: Facebook ID = MagenTech (https://www.facebook.com/MagenTech)</li>
+				<li><code>Show Twitter</code> - Options (yes/no)</li>
+				<li><code>Twitter username</code> - is the Twitter username </li>
+				<li><code>Show Custom</code> - Options (yes/no) </li>
+				<li><code>Custom block</code> - is the content of custom block </li>
+				
+			</ul>
+		</div>
+	</section>
+
+	<section id="theme_custom">
+		<h1>Custom Tab</h1>
+		<div class="sub_content">
+			<p>Go to  <b> admin › OpenCartWorks › So Themes Config  › custom Tab  </b>  </p>
+			<figure class="img-polaroid">
+				<img class="img-thumbnail"src="http://images.smartaddons.com/Open-cart-theme/so-document/theme_custom-1.jpg">
+			</figure>
+			<ul>
+				<li><code>CSS Input</code> - It is the css code  direct </li>
+				<li><code>CSS File</code> - add file css, Enter file path file css</li>
+				<li><code>JS File</code> - add file js, Enter file path file js</li>
+				
+			</ul>
+		
+		</div>
+	</section>
+	
+	<section id="theme_advanced">
+		<h1>Advanced Tab</h1>
+		<div class="sub_content">
+			<p>Go to  <b> admin › OpenCartWorks › So Themes Config  › Advanced Tab  </b>  </p>
+			
+			<figure class="img-polaroid">
+				<img class="img-thumbnail"src="http://images.smartaddons.com/Open-cart-theme/so-document/theme_advanced-1.jpg">
+			</figure>
+			
+		    <ul>
+				<li><code>SCSS Compile</code> - Compile scss source for get css styles using  </li>
+				<li><code>User Developer Compile Muti Color</code> - Only user developer</li>
+				<li><code>Show Minify CSS</code> - compress all css to only one file</li>
+				<li><code>Show Minify JS</code> - compress all js to only one file</li>
+				
+			</ul>
+		
+		</div>
+	</section>
+	
+	<section id="mobile_general">
+		<h1>General Tab</h1>
+		<div class="sub_content">
+			<p>Go to  <b> admin › OpenCartWorks › So Mobile  › General   </b>  </p>
+			<figure class="img-polaroid">
+				<img class="img-thumbnail"src="http://images.smartaddons.com/Open-cart-theme/so-document/mobile_general-1.jpg">
+			</figure>
+			
+		    <p><strong>1.Select Layout</strong> - Choose the layout that you like. Click button Apply Default Setting Choose the Layout </p>
+		    <ul>
+				<li><code>New Color</code> - Set name color (do not uppercase letters) and fill color. Continue Click button Compile CSS. </li>
+				<li><code>Select Color</code> - Select the color you just created › Click button Save</li>
+				
+			</ul>
+			<figure class="img-polaroid">
+				<img class="img-thumbnail"src="http://images.smartaddons.com/Open-cart-theme/so-document/mobile_general-2.jpg">
+			</figure>
+			<p><strong>2.Platforms</strong> </p>
+			<ul>
+				<li><code>Mobile Status</code> On - use layout mobile/ Off - use layout responsive</li>
+				<li><code>Logo Mobile</code> - Choose a image path  </li>
+				<li><code>Sticky Top Bar</code> - Attach sidebar to top the page when the user scrolls </li>
+				<li><code>Copyright</code> - It is the content to Copyright</li>
+				
+			</ul>
+		</div>
+	</section>
+	
+	<section id="mobile_bottombar">
+		<h1>Bottom Bar Tab</h1>
+		<div class="sub_content">
+			<p>Go to  <b> admin › OpenCartWorks › So Mobile  › Bottom Bar </b>  </p>
+			<figure class="img-polaroid">
+				<img class="img-thumbnail"src="http://images.smartaddons.com/Open-cart-theme/so-document/mobile_bottombar-1.jpg">
+			</figure>
+			
+			<ul class="steps">
+				<li><code>Show Bottom Bar</code> - Options (yes/no)</li>
+				<li><code>Show Menu More</code> - Options (yes/no) </li>
+				
+			</ul>
+			<p><b>View Frontend:</b> </p>
+			<figure class="img-polaroid">
+				<img class="img-thumbnail"src="http://images.smartaddons.com/Open-cart-theme/so-document/mobile_bottombar-2.jpg">
+			</figure>
+		
+		</div>
+	</section>
+	
+	<section id="mobile_leftbar">
+		<h1>Panel Left Tab</h1>
+		<div class="sub_content">
+			<p>Go to  <b> admin › OpenCartWorks › So Mobile  › Left Bar </b>  </p>
+			<figure class="img-polaroid">
+				<img class="img-thumbnail"src="http://images.smartaddons.com/Open-cart-theme/so-document/mobile_leftbar-1.jpg">
+			</figure>
+			<ul class="steps">
+				<li><code>Show Search</code> - Options (yes/no)</li>
+				<li><code>Show Main Menu</code> - Options (yes/no) </li>
+				<li><code>Show All Category</code> - Options (yes/no) </li>
+				<li><code>Show Category</code> - Options (yes/no) </li>
+				<li><code>Show Wistlist</code> - Options (yes/no) </li>
+				<li><code>Show Compare</code> - Options (yes/no) </li>
+				
+			</ul>
+			<p><b>View Frontend:</b> </p>
+			<figure class="img-polaroid">
+				<img class="img-thumbnail"src="http://images.smartaddons.com/Open-cart-theme/so-document/mobile_leftbar-2.jpg">
+			</figure>
+		</div>
+	</section>
+	
+	<section id="mobile_page">
+		<h1> Category Page Tab</h1>
+		<div class="sub_content">
+			<p>Go to  <b> admin › OpenCartWorks › So Mobile  › Page </b>  </p>
+			<figure class="img-polaroid">
+				<img class="img-thumbnail"src="http://images.smartaddons.com/Open-cart-theme/so-document/mobile_page-1.jpg">
+			</figure>
+			<ul class="steps">
+				<li><code>More Category Button</code> - Options (yes/no)</li>
+				<li><code>Compare Button</code> - Options (yes/no) </li>
+				<li><code>Wishlist Button</code> - Options (yes/no) </li>
+				<li><code>Addtocart Button</code> - Options (yes/no) </li>
+			
+			</ul>
+			<p><b>View Frontend:</b> </p>
+			<figure class="img-polaroid">
+				<img class="img-thumbnail"src="http://images.smartaddons.com/Open-cart-theme/so-document/mobile_page-2.jpg">
+			</figure>
+		</div>
+	</section>
+	
+	<section id="mobile_font">
+		<h1> Fonts Tab</h1>
+		<div class="sub_content">
+			<p>Go to  <b> admin › OpenCartWorks › So Mobile  › font Tab  </b>  </p>
+			
+		    <figure class="img-polaroid">
+				<img class="img-thumbnail"src="http://images.smartaddons.com/Open-cart-theme/so-document/theme_font-1.jpg">
+			</figure>
+
+			<ul class="steps">
+				<li><code>Font Setting standard</code> - It is the default fonts of the system </li>
+				<li><code>Font Setting Google Fonts</code> - It is the Google fonts, fast, and open through great typography.</li>
+				<li><code>Google URL</code> - Example: http://fonts.googleapis.com/css?family=Roboto:400,500,700 <a href="https://www.google.com/fonts">⇒ View More</a></li>
+				<li><code>Google Family</code> - Example: Roboto, sans-serif;</li>
+				<li><code>Add css selectors</code> - is the css selectors of setting </li>
+				
+			</ul>
+		
+		</div>
+	</section>
+	
+	<section id="mobile_advanced">
+		<h1> Advanced Tab</h1>
+		<div class="sub_content">
+			<p>Go to  <b> admin › OpenCartWorks › So Mobile  › Advanced </b>  </p>
+			
+		    <figure class="img-polaroid">
+				<img class="img-thumbnail"src="http://images.smartaddons.com/Open-cart-theme/so-document/mobile_advanced-1.jpg">
+			</figure>
+
+		    <ul>
+				<li><code>SCSS Compile</code> - Compile scss source for get css styles using  </li>
+				<li><code>User Developer Compile Muti Color</code> - Only user developer</li>
+				
+			</ul>
+		
+		</div>
+	</section>
+	
+	
+	
+		
+	<section id="extensionconfiguration">
+		<h1>Extension Configuration</h1>
+		<div class="sub_content">
+		<p>There are two ways to configure Extensions of this Theme:</p> 
+		<p><strong>Option 1:</strong> Go to <b>Admin Control Panel</b> => <b>OpenCartWorks</b> => <b>So Page Builder</b> => Select the Layout you want.</p>
+	
+		<p>Themes is using extensions: </p>
+	 
+		<ol  class="steps">
+			<li><strong>So Page Builder:</strong> Click <a href="http://www.smartaddons.com/documentation/so-page-builder/" target="_blank"> here</a> to read user guide
+				<a class="btn btn-outline-danger btn-sm" href="http://images.smartaddons.com/Open-cart-theme/support/video-guide/edit_shortcode.webm" aria-label="Delete">
+		          <i class="fa fa-youtube-play" aria-hidden="true"></i>
+		        </a>
+			</li>
+		 	<li><strong>So Mega Menu:</strong> Click <a href="http://www.smartaddons.com/documentation/so-mega-menu/" target="_blank"> here</a> to read user guide
+		 		<a class="btn btn-outline-danger btn-sm" href="http://images.smartaddons.com/Open-cart-theme/support/video-guide/change_icon_menu.webm" aria-label="Delete">
+		          <i class="fa fa-youtube-play" aria-hidden="true"></i>
+		        </a>
+		 	</li>
+			<li><strong>So Onepage Checkout:</strong> Click <a href="http://www.smartaddons.com/documentation/so-onepage-checkout/" target="_blank"> here</a> to read user guide</li>
+			<li><strong>So Search Pro:</strong> Click <a href="http://www.smartaddons.com/documentation/so-search-pro/" target="_blank"> here</a> to read user guide</li>
+			<li><strong>So Home Slider:</strong> Click <a href="http://www.smartaddons.com/documentation/so-home-slider/" target="_blank"> here</a> to read user guide
+				<a class="btn btn-outline-danger btn-sm" href="http://images.smartaddons.com/Open-cart-theme/support/video-guide/so_home_slider.webm" aria-label="Delete">
+		          <i class="fa fa-youtube-play" aria-hidden="true"></i>
+		        </a>
+			</li>
+			<li><strong>So Category Slider:</strong> Click <a href="http://www.smartaddons.com/documentation/so-category-slider/" target="_blank"> here</a> to read user guide</li>
+			<li><strong>So Listing Tabs:</strong> Click <a href="http://www.smartaddons.com/documentation/so-listing-tabs/" target="_blank"> here</a> to read user guide</li>
+			<li><strong>So Extra Slider:</strong> Click <a href="http://www.smartaddons.com/documentation/so-extra-slider/" target="_blank"> here</a> to read user guide</li>
+			<li><strong>So Deals:</strong> Click <a href="http://www.smartaddons.com/documentation/so-deals/" target="_blank"> here</a> to read user guide
+				<a class="btn btn-outline-danger btn-sm" href="http://images.smartaddons.com/Open-cart-theme/support/video-guide/so_deal_guide.webm" aria-label="Delete">
+		          <i class="fa fa-youtube-play" aria-hidden="true"></i>
+		        </a>
+			</li>
+			<li><strong>So Filter Shop By:</strong> Click <a href="http://www.smartaddons.com/documentation/so-filter-shop-by/" target="_blank"> here</a> to read user guide</li>
+			<li><strong>So Latest Blog:</strong> Click <a href="http://www.smartaddons.com/documentation/so-latest-blog/" target="_blank"> here</a> to read user guide
+				<a class="btn btn-outline-danger btn-sm" href="http://images.smartaddons.com/Open-cart-theme/support/video-guide/simple_blog_config.webm" aria-label="Delete">
+		          <i class="fa fa-youtube-play" aria-hidden="true"></i>
+		        </a>
+			</li>
+			<li><strong>So Newsletter Custom Popup:</strong> Click <a href="http://www.smartaddons.com/documentation/sj-newsletter-custom-popup/" target="_blank"> here</a> to read user guide</li>
+			<li><strong>So Social Login:</strong> Click <a href="http://www.smartaddons.com/documentation/so-social-login/" target="_blank"> here</a> to read user guide 
+				<a class="btn btn-outline-danger btn-sm" href="http://images.smartaddons.com/Open-cart-theme/support/video-guide/social_login_config.webm" aria-label="Delete">
+		          <i class="fa fa-youtube-play" aria-hidden="true"></i>
+		        </a>
+			</li>
+			<li><strong>So Instagram Gallery:</strong> Click <a href="http://www.smartaddons.com/documentation/so-instagram-gallery/" target="_blank"> here</a> to read user guide</li>
+			<li><strong>So Quickview:</strong> Click <a href="http://www.smartaddons.com/documentation/so-quickview/" target="_blank"> here</a> to read user guide</li>
+		</ol>
+	 	<p><strong>Option 2:</strong> Go to <b>Admin Control Panel</b> › <b>Extensions</b> › <b>Extensions</b> › Choose the extension type: <b>Modules</b> =>  And choose the module you want.</p>
+
+		
+		</div>
+
+	</section>
+	  
+	  	<section id="module_pagebuilder">
+			<h1>Page Builder Configuration</h1>
+			<div class="sub_content">
+				<p> Go to <b>Admin Control Panel</b> => <b>OpenCartWorks</b> => <b>So Page Builder</b> => Select the Layout you want.</p>
+				
+				<div class="admonition note">
+				<p class="first admonition-title">Note</p>
+					<p>Home 1 is made from So Page Builder (Home 1 + Footer 1), similar as other Home page</p>
+				</div>
+				<p><b>1.Example So Page Builder :</b> Edit Home 1</p>
+				
+				<figure class="img-polaroid">
+					<img class="img-thumbnail"src="http://images.smartaddons.com/Open-cart-theme/so-document/pagebuilder-1.jpg">
+				</figure>	
+				<p>It will list all modules in the home page 1, You want to edit the module then click edit it</p>
+
+				<p><b>2.Example So Page Builder :</b> Edit Footer 1 </p>
+				<figure class="img-polaroid">
+					<img class="img-thumbnail"src="http://images.smartaddons.com/Open-cart-theme/so-document/pagebuilder-2.jpg">
+				</figure>	
+				<p>It will list all modules in the Footer 1, You want to edit the module then click edit it</p>
+
+				<p><b>3.Example So Page Builder :</b> Edit Mobile Page Builder - Home 1 </p>
+				<figure class="img-polaroid">
+					<img class="img-thumbnail"src="http://images.smartaddons.com/Open-cart-theme/so-document/pagebuilder-3.jpg">
+				</figure>	
+			</div>
+		 
+			
+		
+		</section>
+
+
+		<section id="horizontalmenu">
+			<h1>Horizontal Menu </h1>
+			<div class="sub_content">
+					<p ><strong> Frontend Appearance</strong></p>
+					<figure class="img-polaroid">
+						<img alt=""src="http://images.smartaddons.com/Open-cart-theme/so-document/mega-demo.jpg" />
+					</figure>
+					
+			</div>
+		 
+			<div class="sub_content">
+				<p>Go to <b>Admin › Opencartworks › SO Megamenu ›  So MegaMenu Tab</b> › set values are adjusted for SO Megamenu </p>
+				<p><b>1.Config Menu - Shop</b></p>
+				<figure class="img-polaroid">
+					<img class="img-thumbnail"src="http://images.smartaddons.com/Open-cart-theme/so-document/horizontalmenu-1.jpg">
+				</figure>
+				<p>Config  Menu item - categories:</p>
+				<figure class="img-polaroid">
+					<img class="img-thumbnail"src="http://images.smartaddons.com/Open-cart-theme/so-document/horizontalmenu-2.jpg">
+				</figure>
+				<p>Config Menu item - banner:</p>
+				<div class="last highlight-default">
+					<div class="highlight"><pre>&lt;div class=&quot;img-banner-w&quot;&gt;
+    &lt;div class=&quot;img-banner&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;image/catalog/menu/megabanner/image-5.jpg&quot; alt=&quot;banner&quot;&gt;&lt;/a&gt;&lt;/div&gt;
+    &lt;div class=&quot;img-banner&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;image/catalog/menu/megabanner/image-6.jpg&quot; alt=&quot;banner&quot;&gt;&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;</pre></div>
+				</div>
+				<p><b>2.Config Menu - Page</b></p>
+				<figure class="img-polaroid">
+					<img class="img-thumbnail"src="http://images.smartaddons.com/Open-cart-theme/so-document/horizontalmenu-3.jpg">
+				</figure>
+				<p>Config  Menu item - List pages:</p>
+				<figure class="img-polaroid">
+					<img class="img-thumbnail"src="http://images.smartaddons.com/Open-cart-theme/so-document/horizontalmenu-4.jpg">
+				</figure>
+				<div class="last highlight-default">
+					<div class="highlight"><pre>&lt;div class=&quot;row&quot;&gt;
+	&lt;div class=&quot;col-sm-6&quot;&gt;
+		&lt;ul class=&quot;row-list&quot;&gt;
+		   &lt;li&gt;&lt;a class=&quot;subcategory_item&quot; href=&quot;index.php?route=information/information&amp;amp;information_id=4&quot;&gt;About Us&lt;/a&gt;&lt;/li&gt;
+		   &lt;li&gt;&lt;a class=&quot;subcategory_item&quot; href=&quot;index.php?route=information/information&amp;amp;information_id=6&quot;&gt;Services&lt;/a&gt;&lt;/li&gt;
+ 			&lt;li&gt;&lt;a class=&quot;subcategory_item&quot; href=&quot;index.php?route=information/information&amp;amp;information_id=3&quot;&gt;FAQs&lt;/a&gt;&lt;/li&gt;
+
+		   &lt;li&gt;&lt;a class=&quot;subcategory_item&quot; href=&quot;index.php?route=information/contact&quot;&gt;Contact us&lt;/a&gt;&lt;/li&gt;
+		   &lt;li&gt;&lt;a class=&quot;subcategory_item&quot; href=&quot;index.php?route=information/information&amp;amp;information_id=7&quot;&gt;Support 24/7 Page&lt;/a&gt;&lt;/li&gt;  
+		&lt;/ul&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;col-sm-6&quot;&gt;
+		&lt;ul class=&quot;row-list&quot;&gt;
+		  &lt;li&gt;&lt;a class=&quot;subcategory_item&quot; href=&quot;index.php?route=information/information&amp;amp;information_id=9&quot;&gt;Typography&lt;/a&gt;&lt;/li&gt;
+		  &lt;li&gt;&lt;a class=&quot;subcategory_item&quot; href=&quot;index.php?route=information/information&amp;amp;information_id=5&quot;&gt;Photo Gallery&lt;/a&gt;&lt;/li&gt;
+		  &lt;li&gt;&lt;a class=&quot;subcategory_item&quot; href=&quot;index.php?route=information/sitemap&quot;&gt;SiteMap&lt;/a&gt;&lt;/li&gt;
+		    &lt;li&gt;&lt;a class=&quot;subcategory_item&quot; href=&quot;index.php?route=information&quot;&gt;Page 404&lt;/a&gt;&lt;/li&gt;
+		  &lt;li&gt;&lt;a class=&quot;subcategory_item&quot; href=&quot;index.php?route=information/information&amp;amp;information_id=8&quot;&gt;Coming Soon &lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</pre></div>
+				</div>
+			</div>
+		
+		</section>
+
+	 	<section id="verticalmenu">
+			<h1>Vertical Menu </h1>
+			<div class="sub_content">
+			<p style="display: block ! important; "><strong> Frontend Appearance</strong></p>
+			<figure class="img-polaroid">
+					<img alt=""src="http://images.smartaddons.com/Open-cart-theme/so-document/ver-demo.jpg" />
+			</figure>
+			
+			</div>
+			<p>Go to <b>Admin › Opencartworks › SO Megamenu ›  So Verticalmenu Tab</b> › set values are adjusted for SO Megamenu </p>
+			<p><b>1.Translate text (All category)</b></p>
+			<figure class="img-polaroid">
+				<img alt=""src="http://images.smartaddons.com/Open-cart-theme/so-document/verticalmenu-1.jpg" />
+			</figure>
+			
+			<p><b>2.Config Menu - Gifts & Toys</b></p>
+			<figure class="img-polaroid">
+				<img class="img-thumbnail"src="http://images.smartaddons.com/Open-cart-theme/so-document/verticalmenu-2.jpg">
+			</figure>
+			<p>Config  Menu item - Sub category:</p>
+			<figure class="img-polaroid">
+				<img class="img-thumbnail"src="http://images.smartaddons.com/Open-cart-theme/so-document/verticalmenu-3.jpg">
+			</figure>
+			<p>Config  Menu item - HTML Content:</p>
+			<div class="last highlight-default">
+					<div class="highlight"><pre>&lt;div class=&quot;img-vbanner&quot;&gt;
+    &lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;image/catalog/menu/megabanner/vbanner1.jpg&quot; alt=&quot;banner&quot;&gt;&lt;/a&gt;  
+&lt;/div&gt;</pre></div>
+				</div>
+			<p><b>3.Config Menu - Optimum Electronics</b></p>
+			
+			
+			<figure class="img-polaroid">
+				<img class="img-thumbnail"src="http://images.smartaddons.com/Open-cart-theme/so-document/verticalmenu-4.jpg">
+			</figure>
+			<p>Config  Menu item - Sub categories 1:</p>
+			<div class="admonition note">
+			<p class="first admonition-title">Note</p>
+				<p>Menu item after the working similar</p>
+			</div>
+			<figure class="img-polaroid">
+				<img class="img-thumbnail"src="http://images.smartaddons.com/Open-cart-theme/so-document/verticalmenu-5.jpg">
+			</figure>
+			
+
+			<p><b>4.Config Menu - Bathroom</b></p>
+		
+			<figure class="img-polaroid">
+				<img class="img-thumbnail"src="http://images.smartaddons.com/Open-cart-theme/so-document/verticalmenu-6.jpg">
+			</figure>
+			<p>Config  Menu item - Sub menu:</p>
+			<figure class="img-polaroid">
+				<img class="img-thumbnail"src="http://images.smartaddons.com/Open-cart-theme/so-document/verticalmenu-7.jpg">
+			</figure>
+		</section>
+	 
+		<section id="support1">
+				<h1>Help & Support</h1>
+				<div class="sub_content">
+					  <p >
+					  If you have any question that is beyond the scope of this help file, please send us via: <a href="http://support.opencartworks.com/" target="_blank">Submit a Ticket</a></p>
+					  <p>Our working hours: Monday to Friday 8AM - 5PM GMT+8.</p>
+					  <p>Thank you so much for purchasing this theme!</p>
+				 </div>
+		</section>
+
+		<section id="support2">
+			<h1>What do we support and do not support?</h1>
+			<div class="sub_content">
+				<h3>We Do Support:</h3>
+				<ul>
+					<li>Provide detailed documentation to help you install and configure the theme successfully by yourself.</li>
+					<li>Answer your enquiries about theme configuration and use.</li>
+					<li>Answer you how to edit and translate the language files.</li>
+					<li>Fix bugs of our themes ONLY if the source code are not modified.</li>
+				</ul>
+				<h3>We Do Not Support:</h3>			  
+				<ul>
+					<li>Upgrading the theme on your store if the source code was modified by any reasons.</li>
+					<li>Editing the theme's source code for your own requirements which the theme's current version is not supported. Except editing language files.</li>
+				</ul>	
+				<div class="admonition note">
+					<p class="first admonition-title">Note</p>
+					<p class="last">Note: <em>We have right to answer or not answer you how to edit the theme's source code.</p>
+				</div>		
+			 </div>
+		</section>
+
+		<a href="#" id="toTop" class="back-to-top fa fa-angle-up active"></a>
+	
+	</div>
+	
+</body>
+</html>
